@@ -1,0 +1,95 @@
+base_pyhtml = self.app.importFromFile ('base.pyhtml', 'base_pyhtml')
+base_pycss = self.app.importFromFile ('base.pycss', 'base_pycss')
+contribute_pycss = self.app.importFromFile ('contribute.pycss', 'contribute_pycss')
+
+from base import Stripe
+stripe = Stripe ()
+	
+self.content = '''
+	<html>
+		<head>
+			''' + base_pyhtml.getAdmin ('contribute') + '''
+			
+			<title>Transcrypt and Numscrypt - How to contribute</title>
+			<meta name="description" lang="en" xml:lang="en" content="How to contribute to Transcrypt or Numscrypt. Transcrypt merchandise.">
+			<meta name="keywords" lang="en" xml:lang="en" content="Transcrypt Numscrypt contribute participate merchandise">			
+						
+			<style>
+				''' + base_pycss.getAll () + '''
+				''' + contribute_pycss.getAll () + '''
+			</style>
+		</head>
+		<body>
+			''' + base_pyhtml.getFixed () + '''
+
+			<div class="moving">
+				<div class="contribute">
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Give feedback</h1>
+						
+						<p>
+						 <a class='mixed-link' href="https://github.com/JdeH/Transcrypt" target="_blank"><img src="illustrations/logo_github.png"></img>GitHub</a> is the best channel to give feedback to the developers of Transcrypt or to contribute in general.<br>
+						
+						<p>
+						Developing Transcrypt would have been impossible without the valuable feedback received from many people, using GitHub, but also via email. Feel free to use either medium to share your experiences, wishes and proposals. This is how sourcemaps and static typechecking became part of Transcrypt!
+
+						<p>
+						On the other hand, don't be too disappointed if you're proposal doesn't make it into the distribution. There are many, often contradictory, requirements to consider. But be sure that it will be looked into seriously.
+						
+						<p>
+						Especially bug reports were indispensible to make Transcrypt reliable. Something wrong? File a GitHub issue so it can be corrected, possibly already in the next commit. Not sure? File it nevertheless, better safe than sorry.
+					</div>
+					
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Contribute to the examples and to the documentation</h1>
+						
+						<p>
+						The availability of small, diverse examples enables people to become quickly acquainted with Transcrypt. You're invited to share what you've learned, e.g. using GitHub issues. Such examples may become part of the documentation.
+						
+						<p>
+						If you think a certain aspect of Transcrypt deserves more attention in the documentation, consider writing a proposed new or improved paragraph about it. The eventual format is restructured text for Sphinx, but plain text contributions are also welcome.
+						
+						<p>
+						In general tutorials and course material are very useful and will be considered for inclusion in, or linking from the Transcrypt website.
+					</div>
+					
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Contribute to the code</h1>
+						
+						<p>
+						Another way to contribute to Transcrypt is to improve or augment the code. Many people have already contributed fixes and enhancements, mostly as GitHub issues. If you decide to contribute in this way, please keep the design goals in mind. Simple and straight: Transcrypt aims at approaching CPython as closely as possible while remaining lean, fast and open. This leads to the following guidelines:
+						
+						 <ul> 
+						 <li><strong>The license of any contribution should be compatible with the Apache 2 license that holds for Transcrypt as a whole.</strong> Of course you're completely free to use Transcrypt for closed source applications or to make closed source libraries for it. But they will never be part of the Transcrypt distribution itself. In this way the lasting liberty of each user is best guarantied.</li>
+						 
+						 <li><strong>Apart from ca. 20kB fixed overhead for the runtime core, the size and speed of the generated JavaScript code should roughly match the speed and size of the Python source code.</strong> This is especially important for the built-in functions, since they will always be present in the download of a web page. Making good trade-offs between speed and compactness on one hand, and completeness and conformity on the other, is crucial to Trancrypt being a true alternative to JavaScript or its derivatives for real world applications. Clean, readable, 'Pythonic' sourcecode is important from a developer point of view, but the user experience should never suffer.</li>
+						 
+						 <li><strong>Transcrypt ports of Python libraries should preferably benefit from optimizations possible in the underlying JavaScript.</strong> A Transcrypt port of the Python regex library e.g. will load and run much faster if it's just a thin API layer over JavaScript's native regex machinery, than if everything is written out from scratch. Note that, under the Pythonic hood, <a href="http://sterlicht.alwaysdata.net/transcrypt.org/docs/html/special_facilities.html#inserting-literal-javascript-pragma-js-and-include" target="blank">__pragma__ ('js', ...)</a> is your friend here.</li>
+						 
+						 <li><strong>If you contribute a library module, please also contribute a <a href="http://sterlicht.alwaysdata.net/transcrypt.org/docs/html/autotesting_transcrypt.html" target="blank">testlet for it to the autotest suite</a>.</strong> In this way it is guaranteed that your module doesn't fall over with newer versions of Transcrypt. <strong>Don't forget to add some examples and/or documentation for your brainchild</strong>, unless it's a faithful port of a well documented Python module. After all that is what enables other developers to benefit from your efforts.</li>
+						 </ul>
+						
+						
+					</div>
+					
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Spread the word</h1>
+						
+						<p>
+						Do you like Transcrypt? Does it help you to write better software or to have more pleaure in writing it? Talk about it with colleagues, write a blog post about it or give a presentation. Mention it in the credits of your application, star it on GitHub, pose or answer questions about it on StackOverflow. In short: get it on the radar of as many people as possible. <strong>Give developers the possibility to choose.</strong>
+					</div>	
+					
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Wear our merchandise</h1>
+						
+						<p>
+						<img src="illustrations/merchandise.png"></img>
+						Transcrypt merchandise items such as t-shirts, caps and bags are available worldwide and can be shipped from <a href="https://shop.spreadshirt.nl/transcrypt/" target="blank">Europe</a> or the <a href="https://shop.spreadshirt.com/transcrypt/" target="blank">USA</a>.
+					</div>				
+				<div>
+					''' + base_pyhtml.getFooter () + '''
+				</div>
+			</div> <!-- moving -->
+		</body>
+	'''
+	

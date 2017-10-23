@@ -1,0 +1,54 @@
+base_pyhtml = self.app.importFromFile ('base.pyhtml', 'base_pyhtml')
+base_pycss = self.app.importFromFile ('base.pycss', 'base_pycss')
+download_pycss = self.app.importFromFile ('download.pycss', 'download_pycss')
+
+from base import Stripe
+stripe = Stripe ()
+	
+self.content = '''
+	<html>
+		<head>
+			''' + base_pyhtml.getAdmin ('download') + '''
+			
+			<title>Transcrypt and Numscrypt - Downloads</title>
+			<meta name="description" lang="en" xml:lang="en" content="Trancrypt / Numscrypt download page.">
+			<meta name="keywords" lang="en" xml:lang="en" content="Transcrypt Numscrypt download installation PyPi">			
+						
+			<style>
+				''' + base_pycss.getAll () + '''
+				''' + download_pycss.getAll () + '''
+			</style>
+		</head>
+		<body>
+			''' + base_pyhtml.getFixed () + '''
+
+			<div class="moving">
+				<div class="download">
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Installing Transcrypt</h1>
+						
+						<p>
+						The simplest way to obtain Transcrypt is by pip-installing it like any other Python package. If you've only got Python 3.5 or 3.6 installed, typing <i>python -m pip install transcrypt</i> at the console will work in most cases. If the situation is more complicated, follow <a href="http://www.transcrypt.org/docs/html/installation_use.html#installation" target="_blank">the steps described in the Transcrypt manual</a>. 
+					
+						<p>
+						If you prefer downloading a zipped version of the current release for manual installation, you'll <a href="https://pypi.python.org/pypi/Transcrypt" target="_blank">find it at the Python package index</a>. For the bleeding edge version, refer to the  <a href="contribute">contribute</a> section of this site.
+					</div>
+					
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<h1>Installing Numscrypt (pre-alpha)</h1>
+						
+						<p>
+						Numscrypt is still in an early stage. To install it, type <i>python -m pip install numscrypt</i> at the console. Since Numscrypt depends on Transcrypt, Transcrypt will be automatically installed as well if it isn't yet there. For alternative methods, follow <a href="http://www.transcrypt.org/numscrypt/docs/html/installation_use.html#installation" target="_blank">the steps described in the Numscrypt manual</a>. 
+					
+						<p>
+						If you prefer downloading a zipped version of Numscrypt for manual installation, you'll <a href="https://pypi.python.org/pypi/Numscrypt" target="_blank">find it at the Python package index</a>. You're very welcome to <a href="https://github.com/JdeH/Numscrypt">contribute</a> to expanding Numscrypt's available set of operations. 
+					</div>
+				</div> <!-- download -->
+				
+				<div>
+					''' + base_pyhtml.getFooter () + '''
+				</div>
+			</div> <!-- moving -->
+		</body>
+	'''
+	

@@ -1,0 +1,30 @@
+body {
+	font-family: arial;
+	font-size: 13;
+	background-color: f0fff0;
+}
+
+.structure {
+	background-color: c0c0c0;
+}
+
+div {
+	max-width: 700;
+	margin: auto;
+	padding-top: 40;
+	padding-bottom: 60;
+}
+
+div p {
+	margin-top: 40;
+}
+
+h1 {
+	font-size: 16;
+	font-style: bold;
+}
+
+a {
+	color: 008000;
+	text-decoration: none;
+}

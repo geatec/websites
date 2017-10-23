@@ -1,0 +1,57 @@
+<html>
+	<body bgcolor="f0fff0" link="008000" alink="008000" vlink="008000">
+		<style>
+			<!--
+				a:link {text-decoration:none}
+				a:active {text-decoration:none}
+				a:visited {text-decoration:none}
+			-->
+		</style>
+		<font face="arial">
+
+		<font size="5">
+		FemTools
+		<font size="2">
+
+		<p>
+		<font size="4">
+		GmshToDolfin
+		<font size="2">
+		
+		<p>
+		<table width="80%">
+			<tr>
+				<td>
+					<img src="femtools.jpg">
+				</td>
+				<td align="left">
+					<ul>	
+						<li>
+						<a href="gmshtodolfin-1.0-alpha-1.zip">
+						<font size="2">
+						Download gmshToDolfin-1.0-alpha-1.zip (newest)
+						</a>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+		<p>
+		<font size="3">
+		What gmshToDolfin.py does
+		<font size="2">
+		
+		<p>
+		The converter, gmshToDolfin.py, takes as input a GMSH 3D mesh with numbered volumes and surfaces.
+		From this mesh, it generates a 3D Dolfin mesh with 2 mesh functions:
+		<ol>
+			<li> A meshfunction representing the volumes, its values are the volume numbers from GMSH.
+			<li> A meshfunction representing the boundary surfaces, its values are the surface numbers from GMSH.
+		</ol>
+		The distinct surfaces can be used to conveniently specify distinct boundary conditions in a FEniCS variational form.
+		
+		<p>
+		The converter is tested with FEniCS 1.0 for Windows and GMSH 2.6.2 for Windows.
+		Its usage becomes clear from inspecting the last few lines of the source code under the comment Main.
+	</body>
+</html>

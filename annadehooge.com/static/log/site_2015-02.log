@@ -1,0 +1,511 @@
+annadehooge.com: 2015-02-04 17:47:24 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 17:59:41 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 17:59:49 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 17:59:51 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 17:59:54 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 18:00:58 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 18:01:50 [access] ip: 24.132.47.6, http://www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_1 --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:15:38 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:15:40 [initialization] authorization tables created and root super user inserted
+annadehooge.com: 2015-02-04 19:15:40 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:26:09 [access] ip: 66.249.83.218, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:36:57 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:36:57 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:36:57 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:37:15 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:37:15 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:37:15 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:37:20 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:37:30 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:38:27 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:38:29 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:39:20 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:39:23 [initialization] authorization tables created and root super user inserted
+annadehooge.com: 2015-02-04 19:39:23 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:39:28 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:39:31 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:39:32 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:39:33 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:39:37 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:39:39 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:39:40 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:39:41 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:39:44 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:40:07 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:40:07 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:40:07 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:40:35 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:40:46 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:40:47 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:40:48 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:40:51 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:40:51 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:40:51 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+
+
+
+annadehooge.com: 2015-02-04 19:42:18 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:42:18 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:42:18 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+annadehooge.com: 2015-02-04 19:42:19 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+
+
+
+annadehooge.com: 2015-02-04 19:42:27 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:42:27 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:42:27 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:46:22 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:46:22 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:46:22 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:46:23 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:46:24 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:47:18 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:47:19 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:47:42 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:47:43 [initialization] authorization tables created and root super user inserted
+annadehooge.com: 2015-02-04 19:47:43 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:50:04 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:50:04 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:50:04 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 19:50:40 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:50:42 [initialization] authorization tables created and root super user inserted
+annadehooge.com: 2015-02-04 19:50:42 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+
+
+
+annadehooge.com: 2015-02-04 19:50:44 [initialization] application restarted
+annadehooge.com: 2015-02-04 19:50:44 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 19:50:44 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:51:17 [access] ip: 24.132.47.6, http://www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_4 --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:51:49 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 19:59:21 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 20:00:43 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 20:28:26 [initialization] application restarted
+annadehooge.com: 2015-02-04 20:28:26 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 20:28:26 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 21:12:21 [initialization] application restarted
+annadehooge.com: 2015-02-04 21:12:21 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 21:12:21 [access] ip: 66.249.83.212, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 21:14:50 [initialization] application restarted
+annadehooge.com: 2015-02-04 21:14:50 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 21:14:50 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:16:30 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:16:34 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:19:03 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:20:35 [access] ip: 24.132.47.6, http://www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_4 --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:21:05 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:21:07 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:27:16 [access] ip: 24.132.47.6, http://www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_4 --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 21:28:59 [initialization] application restarted
+annadehooge.com: 2015-02-04 21:28:59 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 21:28:59 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:31:53 [access] ip: 66.249.83.212, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-04 21:36:52 [access] ip: 66.249.83.212, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-04 22:16:40 [initialization] application restarted
+annadehooge.com: 2015-02-04 22:16:40 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+annadehooge.com: 2015-02-04 23:31:21 [initialization] application restarted
+annadehooge.com: 2015-02-04 23:31:21 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-04 23:43:18 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-05 06:02:41 [initialization] application restarted
+annadehooge.com: 2015-02-05 06:02:41 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 06:02:41 [access] ip: 172.246.147.196, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-05 08:20:13 [initialization] application restarted
+annadehooge.com: 2015-02-05 08:20:13 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 08:20:13 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 08:57:10 [access] ip: 66.249.83.212, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:18:06 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:20:57 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:23:32 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:26:06 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:26:09 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:29:22 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:29:55 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+
+
+
+annadehooge.com: 2015-02-05 09:35:31 [initialization] application restarted
+annadehooge.com: 2015-02-05 09:35:31 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 09:35:31 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:35:35 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_1
+annadehooge.com: 2015-02-05 09:35:41 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/index/info
+annadehooge.com: 2015-02-05 09:35:42 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/index/info
+annadehooge.com: 2015-02-05 09:35:46 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_4
+annadehooge.com: 2015-02-05 09:35:48 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_4
+annadehooge.com: 2015-02-05 09:35:59 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 09:36:01 [access] ip: 24.132.47.6, http://www.annadehooge.com/log --> www.annadehooge.com/log/site_2015-02.log
+
+
+
+annadehooge.com: 2015-02-05 09:40:42 [initialization] application restarted
+annadehooge.com: 2015-02-05 09:40:42 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 09:40:47 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 09:40:51 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/index/about
+annadehooge.com: 2015-02-05 09:40:53 [access] ip: 24.132.47.6, http://www.annadehooge.com/index/about --> www.annadehooge.com/index/info
+annadehooge.com: 2015-02-05 09:40:56 [access] ip: 24.132.47.6, http://www.annadehooge.com/index/info --> www.annadehooge.com/index/contact
+annadehooge.com: 2015-02-05 09:40:59 [access] ip: 24.132.47.6, http://www.annadehooge.com/index/contact --> www.annadehooge.com/index
+annadehooge.com: 2015-02-05 09:41:02 [access] ip: 24.132.47.6, http://www.annadehooge.com/index --> www.annadehooge.com/single_picture/edwin_van_wier/edwin_van_wier_1
+annadehooge.com: 2015-02-05 09:41:14 [access] ip: 24.132.47.6, http://www.annadehooge.com/index --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_3
+annadehooge.com: 2015-02-05 09:41:46 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 10:40:27 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 10:40:29 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 10:40:51 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 10:40:52 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 10:41:13 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_1
+annadehooge.com: 2015-02-05 10:41:38 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_4
+annadehooge.com: 2015-02-05 10:42:40 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_4
+annadehooge.com: 2015-02-05 11:36:42 [access] ip: 86.85.65.14, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 11:41:15 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 11:41:17 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/log
+annadehooge.com: 2015-02-05 11:44:04 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 11:44:13 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_1
+
+
+
+annadehooge.com: 2015-02-05 12:14:54 [initialization] application restarted
+annadehooge.com: 2015-02-05 12:14:54 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 12:14:54 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 12:15:01 [access] ip: 24.132.47.6, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 12:15:22 [access] ip: 24.132.47.6, http://www.annadehooge.com/ --> www.annadehooge.com/index
+annadehooge.com: 2015-02-05 12:15:27 [access] ip: 24.132.47.6, http://www.annadehooge.com/index --> www.annadehooge.com/index/about
+
+
+
+annadehooge.com: 2015-02-05 12:17:47 [initialization] application restarted
+annadehooge.com: 2015-02-05 12:17:47 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 12:17:47 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+
+
+
+annadehooge.com: 2015-02-05 12:29:12 [initialization] application restarted
+annadehooge.com: 2015-02-05 12:29:12 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+annadehooge.com: 2015-02-05 12:29:12 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/robots.txt
+annadehooge.com: 2015-02-05 12:29:12 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/
+annadehooge.com: 2015-02-05 12:29:18 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/index
+annadehooge.com: 2015-02-05 12:29:18 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/index/info
+annadehooge.com: 2015-02-05 12:29:19 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/index/about
+annadehooge.com: 2015-02-05 12:29:19 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/index/contact
+annadehooge.com: 2015-02-05 12:29:20 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/peter_orre/peter_orre_3
+annadehooge.com: 2015-02-05 12:29:20 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/peter_orre/peter_orre_1
+annadehooge.com: 2015-02-05 12:29:20 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/peter_orre/peter_orre_2
+annadehooge.com: 2015-02-05 12:29:21 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_5
+annadehooge.com: 2015-02-05 12:29:22 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_8
+annadehooge.com: 2015-02-05 12:29:22 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_1
+annadehooge.com: 2015-02-05 12:29:23 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_9
+annadehooge.com: 2015-02-05 12:29:24 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_3
+annadehooge.com: 2015-02-05 12:29:24 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_6
+annadehooge.com: 2015-02-05 12:29:25 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_7
+annadehooge.com: 2015-02-05 12:29:25 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_4
+annadehooge.com: 2015-02-05 12:29:28 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/dirk_uebele/dirk_uebele_2
+annadehooge.com: 2015-02-05 12:29:28 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/stefan_witte/stefan_witte_1
+annadehooge.com: 2015-02-05 12:29:28 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/eric_kellerman/eric_kellerman_1
+annadehooge.com: 2015-02-05 12:29:29 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/peter_nientied/peter_nientied_1
+annadehooge.com: 2015-02-05 12:29:29 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/eric_kellerman/eric_kellerman_2
+annadehooge.com: 2015-02-05 12:29:29 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/peter_nientied/peter_nientied_2
+annadehooge.com: 2015-02-05 12:29:30 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/edwin_van_wier/edwin_van_wier_1
+annadehooge.com: 2015-02-05 12:29:37 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/raymond_van_mil/raymond_van_mil_2
+annadehooge.com: 2015-02-05 12:29:39 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/raymond_van_mil/raymond_van_mil_1
+annadehooge.com: 2015-02-05 12:29:44 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/raymond_van_mil/raymond_van_mil_3
+annadehooge.com: 2015-02-05 12:29:49 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_1
+annadehooge.com: 2015-02-05 12:29:53 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_2
+annadehooge.com: 2015-02-05 12:29:59 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_4
+annadehooge.com: 2015-02-05 12:30:04 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_5
+annadehooge.com: 2015-02-05 12:30:08 [access] ip: 66.249.67.113, browser --> www.annadehooge.com/single_picture/pascale_hustings/pascale_hustings_3
+annadehooge.com: 2015-02-05 12:30:13 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_4
+annadehooge.com: 2015-02-05 12:30:18 [access] ip: 66.249.67.105, browser --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_1
+annadehooge.com: 2015-02-05 12:30:24 [access] ip: 66.249.67.121, browser --> www.annadehooge.com/single_picture/charlona_teerlink/charlona_teerlink_2

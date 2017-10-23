@@ -1,0 +1,59 @@
+Linear algebra
+Complex numbers
+
+
+Compute:
+
+
+Assignment 1
+
+
+i ^ 2
+
+
+(1 - 2 i) * (-2 + 5 i)
+
+
+(-2 - 2 i) ^ 2
+
+
+
+Assignment 2
+
+
+(1 + 2 i) + (-1 - i)
+
+
+2 * (3 + i)
+
+
+i + 2
+
+
+
+Assignment 3
+
+
+sqrt (1)
+
+sqrt (4)
+
+sqrt (-1)
+
+sqrt (-4)
+
+
+
+Assignment 4
+
+
+Inner product
+
+[   1 + i  ]     [  3 - i  ]
+[  -1 - i  ]  .  [   -i    ]
+[     3    ]     [ -1 + i  ]
+
+Product of matrix and vector
+
+[  1 + i    2 + 2i  ]      [ 1 + i ]
+[  3 - i    -3 + i  ]      [   -1  ]

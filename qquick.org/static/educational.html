@@ -1,0 +1,129 @@
+<html>
+	<body bgcolor="f0fff0" link="008000" alink="008000" vlink="008000">
+		<style>
+			<!--
+				a:link {text-decoration:none}
+				a:active {text-decoration:none}
+				a:visited {text-decoration:none}
+			-->
+		</style>
+		<font face="arial">
+
+		<font size="5">
+		SymPyLC
+		<font size="2">
+		
+		<p>
+		<table width="80%">
+			<tr>
+				<td width="50%">
+					<img src="simpylc.jpg">
+				</td>
+				<td align="left">
+					<ul>	
+						<li>
+						<a href="https://pypi.python.org/pypi/SimPyLC" target="_blank">
+						<font size="2">
+						SimPyLC (newest) for Windows and Linux
+						</a>
+						<li>
+						<a href="simpylc-0.1-alpha-5.zip">
+						<font size="2">
+						Download SimPyLC-0.1-alpha-5.zip
+						</a>
+						<li>
+						<a href="simpylc-0.1-alpha-4.zip">
+						<font size="2">
+						Download SimPyLC-0.1-alpha-4.zip
+						</a>
+						<li>
+						<a href="simpylc-0.1-alpha-3.zip">
+						<font size="2">
+						Download SimPyLC-0.1-alpha-3.zip
+						</a>
+						<li>
+						<a href="pythonforsimpylc-0.1-alpha-1.zip">
+						<font size="2">
+						Download PythonForSimPyLC-0.1-alpha-1.zip (newest)
+						</a>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+		<p>
+		<font size="3">
+		What SimPyLC does
+		<font size="2">
+		
+		<p>
+		SimPyLC is a PLC simulator for teaching purposes.
+		It features an arbitrary number of coupled PLC modules and an arbitrary number of hierarchical OpenGL visualisation models.
+		An example simulation is provided, as well as a brief HowTo document explaining the underlying principles.
+		The source code of SimPyLC is very brief and suitable to completely understanding what's going on behind the scenes.
+		
+		<p>
+		A specially packed Python 2.7 distribution including PyOpenGL, PIL and NumPy is provided for convenience.
+		Unpack this distribution in an arbitrary directory.
+		After that, using the command line from the unpacking directory, run setupPython32 or setupPython64, depending on your processor.
+		Copy the supplied font file QuartzMS.TTF into C:\Windows\Fonts.
+		
+		<p>
+		Then go to the simulator directory containing the file world.py and start the simulator by entering "python world.py" from the command prompt.
+		Enter setpoints in degrees for the joint angles (e.g. torAngSet for the torso of the robot) on the movement control page.
+		After that set "go" to 1 and watch what happens.
+
+		<br/><br/>
+		
+		<p>
+		<font size="5">
+		GaussJordan
+		<font size="2">
+		
+		<p>
+		<table width="80%">
+			<tr>
+				<td width="50%">
+					<img src="gaussjordan.jpg">
+				</td>
+				<td align="left">
+					<ul>	
+						<li>
+						<a href="gaussjordan-0.1-alpha-2.zip">
+						<font size="2">
+						Download GaussJordan-0.1-alpha-2.zip (newest, including simpler version without objects, operator overloading, list comprehensions or pretty printing)
+						</a>
+						<li>
+						<a href="gaussjordan-0.1-alpha-1.zip">
+						<font size="2">
+						Download GaussJordan-0.1-alpha-1.zip
+						</a>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+		<p>
+		<font size="3">
+		What GaussJordan does
+		<font size="2">
+		
+		<p>
+		GaussJordan is a straightforward implementation of the Gauss Jordan elimination algorithm for matrix inversion.
+		It will run with any Python 2.7 distribution, including the one on this webpage, PythonForSimPyLC.
+		
+		<p>
+		Purposes were:
+		<ul>
+		<li>
+		To give a live demo of the steps involved in the elimination (sweeping) process, by showing intermediate results.
+		<li>
+		To present a tidy, abundantly commented algorithm.
+		</ul>
+		
+		<p>
+		The temptation to use list comprehensions and operator overloading was largely, but not fully, resisted.
+		Of course, when using matrices in practice, one should use NumPy and SciPy.
+		These free libraries, which were written in C, can run rings around this simple demo.
+	</body>
+</html>

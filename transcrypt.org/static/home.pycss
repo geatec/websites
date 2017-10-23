@@ -1,0 +1,107 @@
+from base import *
+
+stripe = Stripe ()
+
+def getAll ():
+	return '''
+		.moving .splash {
+			position: relative;	/* must be relative, to stack with other sections */
+			width: 100%;
+			overflow: hidden;
+			background-color: ''' + splashGray + ''';
+		}
+
+		.moving .announcement-bar {
+			position: relative;
+			top: 0;
+			width: 100%;
+			color: ''' + black + ''';
+			background-color: ''' + lightGray + ''';
+		}
+
+		.moving .announcement-bar .text {
+			position: relative;
+			top: 25%;
+			text-align: center;
+			font-family: open sans, arial, sans serif;
+			font-weight: 100;
+			font-size: 80%;
+		}
+					
+		.moving .panorama {
+			position: relative;
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+			background-image:
+			url("illustrations/paris_panorama.jpg");
+		}
+		
+		.moving .panorama .slogan {
+			position: relative;
+			float: left;
+			top: 60%;
+			padding: 0% 2% 0% 2%;
+			color: ''' + white + ''';
+			background-color: ''' + transparentLogoBlue + ''';
+			font-family: open sans, sans serif;		
+			font-style: italic;
+			font-weight: 700;
+			font-size: 200%;
+		}
+					
+		.moving .summary {
+			position: relative;
+			color: ''' + white + ''';
+		}
+		
+		.moving .summary div {
+			position: relative;
+			padding: 6% 2% 6% 2%;
+		}
+					
+		.moving .summary h1 {
+			position: relative;
+			color: ''' + white + ''';
+			background-color: ''' + fixedGray + ''';
+			text-align: center;
+			padding: 2%;
+			margin: 0 0 0 2%;
+			font-family: open sans, arial, sans;
+		}
+		
+		.moving .summary p {
+			margin: 4% 0 0 6%;
+			font-size: 90%;
+		}
+		
+		.moving .flowchart {
+			background-color: ''' + stripe () + ''';
+			clear: both;
+		}
+
+		.moving .flowchart img {
+			width: 100%;
+			max-width: 650;
+		}
+		
+		.moving .introduction {
+			background-color: ''' + stripe () + ''';
+			clear: both;
+		}
+
+		.moving .correspondence {
+			background-color: ''' + stripe () + ''';
+			clear: both;
+		}
+
+		.moving .mix {
+			background-color: ''' + stripe () + ''';
+			clear: both;
+		}
+
+		.moving .free {
+			background-color: ''' + stripe () + ''';
+			clear: both;
+		}
+	'''

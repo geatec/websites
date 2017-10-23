@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<!-- General -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+		<!-- Google login -->
+		<meta name="google-signin-scope" content="profile email">
+		<meta name="google-signin-client_id" content="7431505345-u19e5a7d6gb6o989q994ss2lp700k5ih.apps.googleusercontent.com">		
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script>
+			function onSignIn (googleUser) {
+				var id_token = googleUser.getAuthResponse().id_token;
+				console.log (id_token);
+				document.getElementById ('login_button') .style.display = 'none';
+			};
+		</script>	
+		
+		<!-- XYref -->
+		<script>
+			refresh = function () {
+				var refreshed = document.getElementById ("refreshed");
+				
+				if (refreshed.value == "no") { 
+					refreshed.value = "yes";
+				}
+				else {
+					refreshed.value = "no";
+					location.reload ();
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="refresh ();">
+		<!-- Google login -->
+		<div class="g-signin2" id='login_button' data-onsuccess="onSignIn" data-theme="dark"></div>
+
+		<!-- XYref -->
+		<input type="hidden" id="refreshed" value="no">	
+		<script src="__javascript__/xyref_client.js"></script>
+		<script>
+			window.onbeforeunload = function () {
+				if (xyref_client.canvas.uploadState ()) {
+					return 'WARNING: YOU HAVE UNSAVED DATA\nTo save it, select [Stay on this Page] once';
+				}
+			}
+		</script>
+	</body>
+</html>

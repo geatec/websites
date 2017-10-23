@@ -1,0 +1,1156 @@
+josmith.org: 2014-12-01 05:17:09 [access] ip: 192.99.107.172, browser --> www.josmith.org/
+josmith.org: 2014-12-01 06:28:19 [access] ip: 66.249.67.46, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-01 06:45:46 [access] ip: 66.249.67.62, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-01 07:35:36 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+josmith.org: 2014-12-01 10:19:28 [access] ip: 136.243.5.215, browser --> www.josmith.org/
+josmith.org: 2014-12-01 23:28:36 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-01 23:28:36 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-01 23:28:42 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-02 01:21:35 [access] ip: 66.249.67.46, browser --> www.josmith.org/
+josmith.org: 2014-12-02 01:36:30 [access] ip: 66.249.67.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-03 13:23:07 [access] ip: 74.52.245.146, browser --> www.josmith.org/
+josmith.org: 2014-12-03 13:23:08 [access] ip: 74.52.245.146, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-03 17:51:51 [access] ip: 208.110.85.234, browser --> www.josmith.org/
+josmith.org: 2014-12-03 17:51:51 [access] ip: 208.110.85.234, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-03 17:51:52 [access] ip: 208.110.85.234, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-03 23:44:44 [access] ip: 69.197.186.210, browser --> www.josmith.org/
+josmith.org: 2014-12-04 13:05:00 [access] ip: 180.76.6.66, browser --> www.josmith.org/
+josmith.org: 2014-12-04 13:05:01 [access] ip: 180.76.6.148, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-04 17:34:45 [access] ip: 178.255.215.65, browser --> www.josmith.org/
+josmith.org: 2014-12-05 20:46:42 [access] ip: 96.44.188.113, browser --> www.JOSMITH.ORG/
+josmith.org: 2014-12-05 21:20:16 [access] ip: 195.39.93.202, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-06 15:03:19 [access] ip: 69.84.207.246, browser --> www.josmith.org/
+josmith.org: 2014-12-06 15:03:26 [access] ip: 69.84.207.246, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-06 15:03:27 [access] ip: 69.84.207.246, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-06 15:03:29 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 70, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith.org/site.py", line 22, in get
+    super () .get ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 242, in get
+    raise Exception ('Combination of email address and password unknown')
+Exception: Combination of email address and password unknown
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 70, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith.org/site.py", line 22, in get
+    super () .get ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 242, in get
+    raise Exception ('Combination of email address and password unknown')
+Exception: Combination of email address and password unknown
+END DEBUG INFO
+
+josmith.org: 2014-12-07 05:07:27 [access] ip: 69.58.178.56, browser --> www.josmith.org/
+josmith.org: 2014-12-07 05:07:28 [access] ip: 69.58.178.56, browser --> m.josmith.org/
+josmith.org: 2014-12-07 05:07:31 [access] ip: 69.58.178.56, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-07 05:07:32 [access] ip: 69.58.178.56, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-07 05:53:54 [access] ip: 216.218.216.219, browser --> www.JOSMITH.ORG/
+josmith.org: 2014-12-07 20:17:32 [access] ip: 66.249.64.50, browser --> www.josmith.org/
+josmith.org: 2014-12-08 04:17:59 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-08 04:18:05 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-08 05:52:38 [access] ip: 180.76.6.156, browser --> www.josmith.org/
+josmith.org: 2014-12-08 05:52:40 [access] ip: 180.76.5.167, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-08 12:27:58 [access] ip: 192.99.107.136, browser --> www.josmith.org/
+josmith.org: 2014-12-09 05:09:38 [access] ip: 66.249.67.46, browser --> www.josmith.org/
+josmith.org: 2014-12-09 20:35:01 [access] ip: 64.246.187.42, http://whois.domaintools.com/josmith.org --> www.josmith.org/
+josmith.org: 2014-12-09 23:35:41 [access] ip: 5.196.152.26, browser --> www.JOSMITH.ORG/
+josmith.org: 2014-12-09 23:47:02 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 00:44:17 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+josmith.org: 2014-12-10 00:47:24 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 01:46:12 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-10 02:03:49 [access] ip: 66.249.64.54, browser --> www.josmith.org/
+josmith.org: 2014-12-10 03:30:12 [access] ip: 66.249.64.58, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 04:20:50 [access] ip: 66.249.64.54, browser --> www.josmith.org/
+josmith.org: 2014-12-10 06:18:27 [access] ip: 167.114.54.131, browser --> www.JOSMITH.ORG/
+josmith.org: 2014-12-10 06:36:45 [access] ip: 66.249.64.50, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-10 07:58:26 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 09:19:05 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+josmith.org: 2014-12-10 09:49:42 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 12:37:37 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-10 13:42:01 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+josmith.org: 2014-12-10 14:25:30 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 14:28:32 [access] ip: 77.75.77.17, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 16:45:16 [access] ip: 107.170.175.241, browser --> www.josmith.org/
+josmith.org: 2014-12-10 16:45:25 [access] ip: 66.249.64.50, browser --> www.josmith.org/
+josmith.org: 2014-12-10 16:45:34 [access] ip: 107.170.175.241, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 16:48:15 [access] ip: 66.249.64.58, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-10 19:03:02 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-10 23:09:41 [access] ip: 204.44.71.193, browser --> www.JOSMITH.ORG/
+josmith.org: 2014-12-11 00:33:29 [access] ip: 178.255.215.65, browser --> www.josmith.org/
+josmith.org: 2014-12-11 10:07:05 [access] ip: 188.165.15.108, browser --> www.josmith.org/
+josmith.org: 2014-12-11 11:23:10 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-11 13:01:48 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-11 15:40:09 [access] ip: 66.249.64.54, browser --> www.josmith.org/
+josmith.org: 2014-12-11 16:43:10 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-11 17:03:45 [access] ip: 104.131.217.132, browser --> www.josmith.org/
+josmith.org: 2014-12-11 18:26:58 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-12 02:12:54 [access] ip: 180.76.6.152, browser --> www.josmith.org/
+josmith.org: 2014-12-12 02:12:57 [access] ip: 180.76.6.140, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-12 09:04:50 [access] ip: 74.81.106.116, http://stackoverflow.com/questions/22739590/how-to-share-single-sqlite-connection-in-multi-threaded-python-application --> www.josmith.org/
+josmith.org: 2014-12-12 09:04:52 [access] ip: 74.81.106.116, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2014-12-12 21:20:00 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-12 22:49:36 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-12 23:24:15 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+josmith.org: 2014-12-13 00:19:36 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-13 03:17:39 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-13 05:45:10 [access] ip: 66.249.64.54, browser --> www.josmith.org/
+josmith.org: 2014-12-13 05:49:49 [access] ip: 66.249.64.58, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-13 06:06:54 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-13 08:40:31 [access] ip: 66.249.64.54, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-13 10:59:13 [access] ip: 66.249.64.50, browser --> www.josmith.org/
+josmith.org: 2014-12-13 11:07:39 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-13 11:33:58 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+josmith.org: 2014-12-13 12:32:16 [access] ip: 66.249.64.50, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-13 13:48:56 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-14 04:53:03 [access] ip: 66.249.64.58, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-14 06:05:00 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-14 06:05:03 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-14 16:21:46 [access] ip: 62.212.77.125, browser --> www.josmith.org/
+josmith.org: 2014-12-14 16:21:51 [access] ip: 62.212.77.125, browser --> www.josmith.org/
+josmith.org: 2014-12-14 16:21:51 [access] ip: 62.212.77.125, browser --> www.josmith.org/
+josmith.org: 2014-12-14 20:53:38 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-14 20:53:43 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-15 03:45:45 [access] ip: 178.255.215.89, browser --> www.josmith.org/
+josmith.org: 2014-12-15 05:04:33 [access] ip: 157.55.39.129, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-15 07:41:12 [access] ip: 192.99.107.226, browser --> www.josmith.org/
+josmith.org: 2014-12-16 02:15:22 [access] ip: 192.99.107.82, browser --> www.josmith.org/
+josmith.org: 2014-12-16 11:56:55 [access] ip: 180.76.6.151, browser --> www.josmith.org/
+josmith.org: 2014-12-16 11:56:57 [access] ip: 180.76.6.16, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-16 22:03:16 [access] ip: 66.249.75.22, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-16 22:11:06 [access] ip: 66.249.75.22, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-17 15:12:25 [access] ip: 157.55.39.129, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-17 19:03:05 [access] ip: 157.55.39.82, browser --> www.josmith.org/
+josmith.org: 2014-12-17 19:03:06 [access] ip: 199.30.24.179, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-19 07:38:57 [initialization] application restarted
+josmith.org: 2014-12-19 07:38:57 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-19 13:58:48 [initialization] application restarted
+josmith.org: 2014-12-19 13:58:48 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-19 13:58:48 [access] ip: 66.249.64.50, browser --> www.josmith.org/
+josmith.org: 2014-12-19 14:07:33 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-19 21:54:42 [initialization] application restarted
+josmith.org: 2014-12-19 21:54:42 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-19 21:54:42 [access] ip: 180.76.5.57, browser --> www.josmith.org/
+josmith.org: 2014-12-19 21:54:43 [access] ip: 180.76.5.19, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-20 15:46:53 [initialization] application restarted
+josmith.org: 2014-12-20 15:46:53 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-20 15:46:53 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-20 20:51:52 [initialization] application restarted
+josmith.org: 2014-12-20 20:51:52 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-20 21:05:14 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-20 21:05:19 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-21 03:42:07 [initialization] application restarted
+josmith.org: 2014-12-21 03:42:07 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-21 03:42:07 [access] ip: 85.25.95.148, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-21 07:03:19 [initialization] application restarted
+josmith.org: 2014-12-21 07:03:19 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-21 08:35:23 [initialization] application restarted
+josmith.org: 2014-12-21 08:35:23 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-21 21:41:19 [initialization] application restarted
+josmith.org: 2014-12-21 21:41:19 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-21 23:13:36 [initialization] application restarted
+josmith.org: 2014-12-21 23:13:36 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-21 23:13:36 [access] ip: 178.255.215.65, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-22 00:25:49 [initialization] application restarted
+josmith.org: 2014-12-22 00:25:49 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 00:25:49 [access] ip: 66.249.64.58, browser --> www.josmith.org/index.html
+
+
+
+josmith.org: 2014-12-22 01:14:45 [initialization] application restarted
+josmith.org: 2014-12-22 01:14:45 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 01:14:45 [access] ip: 66.249.64.138, browser --> www.josmith.org/training.html
+
+
+
+josmith.org: 2014-12-22 02:28:39 [initialization] application restarted
+josmith.org: 2014-12-22 02:28:39 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 02:28:39 [access] ip: 66.249.64.58, browser --> www.josmith.org/coaching.html
+
+
+
+josmith.org: 2014-12-22 03:05:17 [initialization] application restarted
+josmith.org: 2014-12-22 03:05:17 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 03:05:17 [access] ip: 66.249.64.54, browser --> www.josmith.org/participation.html
+
+
+
+josmith.org: 2014-12-22 08:30:10 [initialization] application restarted
+josmith.org: 2014-12-22 08:30:10 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 08:30:10 [access] ip: 188.168.34.194, http://stackoverflow.com/questions/22739590/how-to-share-single-sqlite-connection-in-multi-threaded-python-application --> www.josmith.org/
+josmith.org: 2014-12-22 08:30:10 [access] ip: 188.168.34.194, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-22 10:06:16 [initialization] application restarted
+josmith.org: 2014-12-22 10:06:16 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 10:06:16 [access] ip: 96.227.124.38, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-22 14:26:46 [initialization] application restarted
+josmith.org: 2014-12-22 14:26:46 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 14:51:09 [access] ip: 54.174.48.82, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-22 19:36:39 [initialization] application restarted
+josmith.org: 2014-12-22 19:36:39 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 19:36:39 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-22 22:02:24 [initialization] application restarted
+josmith.org: 2014-12-22 22:02:24 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-22 22:02:24 [access] ip: 64.246.165.170, http://whois.domaintools.com/josmith.org --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-23 07:53:30 [initialization] application restarted
+josmith.org: 2014-12-23 07:53:30 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-23 07:53:30 [access] ip: 66.249.67.54, browser --> www.josmith.org/contactdata.html
+josmith.org: 2014-12-23 08:11:01 [access] ip: 66.249.67.62, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-23 10:05:28 [initialization] application restarted
+josmith.org: 2014-12-23 10:05:28 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-23 10:05:35 [access] ip: 148.251.124.173, browser --> www.josmith.org/contactdata.html
+
+
+
+josmith.org: 2014-12-23 13:31:58 [initialization] application restarted
+josmith.org: 2014-12-23 13:31:58 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-23 13:31:58 [access] ip: 178.255.215.65, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-24 01:35:42 [initialization] application restarted
+josmith.org: 2014-12-24 01:35:42 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-24 01:35:42 [access] ip: 104.148.71.66, browser --> www.josmith.org/Fckeditor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-24 01:35:43 [access] ip: 104.148.71.66, browser --> www.josmith.org/FCKeditor/editor/filemanager/connectors/test.html
+josmith.org: 2014-12-24 01:35:43 [access] ip: 104.148.71.66, browser --> www.josmith.org/Admin/fckeditor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-24 01:35:44 [access] ip: 104.148.71.66, browser --> www.josmith.org/Admin/fCKeditor/editor/filemanager/connectors/test.html
+josmith.org: 2014-12-24 01:35:44 [access] ip: 104.148.71.66, browser --> www.josmith.org/Editor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-24 01:35:45 [access] ip: 104.148.71.66, browser --> www.josmith.org/Editor/editor/filemanager/connectors/test.html
+
+
+
+josmith.org: 2014-12-24 05:05:07 [initialization] application restarted
+josmith.org: 2014-12-24 05:05:07 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-24 05:11:12 [access] ip: 66.249.64.54, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-24 05:55:49 [access] ip: 202.46.54.42, browser --> www.josmith.org/
+josmith.org: 2014-12-24 05:56:38 [access] ip: 119.63.193.132, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-24 19:20:02 [initialization] application restarted
+josmith.org: 2014-12-24 19:20:02 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-24 19:20:02 [access] ip: 108.171.251.115, http://www.josmith.org --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-24 23:03:03 [initialization] application restarted
+josmith.org: 2014-12-24 23:03:03 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-25 03:20:38 [initialization] application restarted
+josmith.org: 2014-12-25 03:20:38 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-25 03:20:38 [access] ip: 199.30.25.136, browser --> www.josmith.org/
+josmith.org: 2014-12-25 03:20:39 [access] ip: 199.30.25.136, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-25 05:30:21 [initialization] application restarted
+josmith.org: 2014-12-25 05:30:21 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-25 05:30:21 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+josmith.org: 2014-12-25 06:27:11 [access] ip: 195.154.235.55, http://www.josmith.org --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-25 09:14:52 [initialization] application restarted
+josmith.org: 2014-12-25 09:14:52 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-25 09:14:52 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+josmith.org: 2014-12-25 09:55:33 [access] ip: 195.154.235.55, http://www.josmith.org --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-25 10:35:01 [initialization] application restarted
+josmith.org: 2014-12-25 10:35:01 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-25 10:35:01 [access] ip: 180.76.6.136, browser --> www.josmith.org/contactdata.html
+
+
+
+josmith.org: 2014-12-25 12:27:18 [initialization] application restarted
+josmith.org: 2014-12-25 12:27:18 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-25 12:27:18 [access] ip: 157.55.39.79, browser --> www.josmith.org/specials.html
+josmith.org: 2014-12-25 12:56:53 [access] ip: 66.249.67.62, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-26 02:34:12 [initialization] application restarted
+josmith.org: 2014-12-26 02:34:12 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-26 02:34:14 [access] ip: 5.255.253.231, browser --> www.josmith.org/
+josmith.org: 2014-12-26 02:34:19 [access] ip: 5.255.253.231, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-26 09:52:15 [initialization] application restarted
+josmith.org: 2014-12-26 09:52:15 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-26 09:52:15 [access] ip: 69.41.254.139, browser --> www.josmith.org/Fckeditor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-26 09:52:15 [access] ip: 69.41.254.139, browser --> www.josmith.org/admin/fckeditor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-26 09:52:16 [access] ip: 69.41.254.139, browser --> www.josmith.org/editor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-26 09:52:16 [access] ip: 69.41.254.139, browser --> www.josmith.org/FCKeditor/editor/filemanager/connectors/uploadtest.html
+josmith.org: 2014-12-26 09:52:16 [access] ip: 69.41.254.139, browser --> www.josmith.org/admin/fckeditor/editor/filemanager/browser/default/connectors/uploadtest.html
+josmith.org: 2014-12-26 09:52:17 [access] ip: 69.41.254.139, browser --> www.josmith.org/editor/editor/filemanager/browser/default/connectors/uploadtest.html
+josmith.org: 2014-12-26 09:52:17 [access] ip: 69.41.254.139, browser --> www.josmith.org/Administrator/fckeditor/editor/filemanager/browser/default/connectors/test.html
+josmith.org: 2014-12-26 09:52:18 [access] ip: 69.41.254.139, browser --> www.josmith.org/Administrator/fckeditor/editor/filemanager/browser/default/connectors/uploadtest.html
+
+
+
+josmith.org: 2014-12-26 19:09:34 [initialization] application restarted
+josmith.org: 2014-12-26 19:09:34 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-26 19:09:34 [access] ip: 213.159.38.90, http://forum.josmith.org/ --> forum.josmith.org/
+josmith.org: 2014-12-26 19:09:34 [access] ip: 213.159.38.90, http://forum.josmith.org/introduction.html --> forum.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-26 20:04:59 [initialization] application restarted
+josmith.org: 2014-12-26 20:04:59 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-26 20:04:59 [access] ip: 199.30.24.160, browser --> www.josmith.org/
+josmith.org: 2014-12-26 20:05:00 [access] ip: 199.30.24.160, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-26 21:22:22 [initialization] application restarted
+josmith.org: 2014-12-26 21:22:22 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-26 21:22:22 [access] ip: 180.76.5.188, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 06:53:27 [initialization] application restarted
+josmith.org: 2014-12-27 06:53:27 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 06:53:27 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-27 07:41:51 [initialization] application restarted
+josmith.org: 2014-12-27 07:41:51 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 07:41:51 [access] ip: 66.249.67.54, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 08:35:34 [initialization] application restarted
+josmith.org: 2014-12-27 08:35:34 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 08:35:34 [access] ip: 66.249.67.46, browser --> www.josmith.org/contactdata.html
+
+
+
+josmith.org: 2014-12-27 09:19:40 [initialization] application restarted
+josmith.org: 2014-12-27 09:19:40 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-27 10:24:30 [initialization] application restarted
+josmith.org: 2014-12-27 10:24:30 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 10:24:30 [access] ip: 66.249.67.54, browser --> www.josmith.org/
+josmith.org: 2014-12-27 10:27:02 [access] ip: 66.249.67.46, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 11:20:34 [initialization] application restarted
+josmith.org: 2014-12-27 11:20:34 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 11:20:34 [access] ip: 66.249.67.46, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 11:53:43 [initialization] application restarted
+josmith.org: 2014-12-27 11:53:43 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 11:53:43 [access] ip: 66.249.67.62, browser --> www.josmith.org/
+josmith.org: 2014-12-27 11:53:55 [access] ip: 66.249.67.46, browser --> www.josmith.org/introduction.html
+josmith.org: 2014-12-27 11:54:06 [access] ip: 66.249.67.54, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 12:31:00 [initialization] application restarted
+josmith.org: 2014-12-27 12:31:00 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-27 19:18:22 [initialization] application restarted
+josmith.org: 2014-12-27 19:18:22 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 19:18:23 [access] ip: 77.75.77.32, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-27 20:14:26 [initialization] application restarted
+josmith.org: 2014-12-27 20:14:26 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 20:14:26 [access] ip: 66.249.67.62, browser --> www.josmith.org/contactdata.html
+
+
+
+josmith.org: 2014-12-27 23:10:37 [initialization] application restarted
+josmith.org: 2014-12-27 23:10:37 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-27 23:10:37 [access] ip: 180.76.6.44, browser --> www.josmith.org/
+josmith.org: 2014-12-27 23:10:38 [access] ip: 180.76.5.21, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-28 10:30:19 [initialization] application restarted
+josmith.org: 2014-12-28 10:30:19 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-29 04:34:10 [initialization] application restarted
+josmith.org: 2014-12-29 04:34:10 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-29 04:34:11 [access] ip: 66.249.64.58, browser --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-29 08:23:06 [initialization] application restarted
+josmith.org: 2014-12-29 08:23:06 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-30 04:15:17 [initialization] application restarted
+josmith.org: 2014-12-30 04:15:17 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-30 04:15:17 [access] ip: 178.255.215.65, browser --> www.josmith.org/structure.html
+
+
+
+josmith.org: 2014-12-30 06:55:30 [initialization] application restarted
+josmith.org: 2014-12-30 06:55:30 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-30 19:04:19 [initialization] application restarted
+josmith.org: 2014-12-30 19:04:19 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-30 19:04:19 [access] ip: 195.154.235.55, http://www.josmith.org --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-31 02:36:04 [initialization] application restarted
+josmith.org: 2014-12-31 02:36:04 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-31 02:36:18 [access] ip: 180.76.5.66, browser --> www.josmith.org/
+josmith.org: 2014-12-31 02:36:20 [access] ip: 180.76.5.69, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-31 05:57:44 [initialization] application restarted
+josmith.org: 2014-12-31 05:57:44 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-31 05:57:44 [access] ip: 180.76.5.74, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-31 11:51:11 [initialization] application restarted
+josmith.org: 2014-12-31 11:51:11 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-31 11:51:11 [access] ip: 37.130.226.90, http://www.josmith.org/ --> www.josmith.org/
+
+
+
+josmith.org: 2014-12-31 13:30:52 [initialization] application restarted
+josmith.org: 2014-12-31 13:30:52 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2014-12-31 15:51:47 [initialization] application restarted
+josmith.org: 2014-12-31 15:51:47 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2014-12-31 15:51:47 [access] ip: 180.76.5.193, browser --> www.josmith.org/
+josmith.org: 2014-12-31 15:51:54 [access] ip: 180.76.5.149, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2014-12-31 20:49:05 [initialization] application restarted
+josmith.org: 2014-12-31 20:49:05 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+

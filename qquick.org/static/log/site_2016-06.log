@@ -1,0 +1,12 @@
+
+
+
+qquick.nl: 2016-06-10 08:37:46 [initialization] application restarted
+qquick.nl: 2016-06-10 08:37:46 [initialization] table users already exists
+
+
+
+localhost:4000: 2016-06-10 08:37:46 [initialization] application restarted
+localhost:4000: 2016-06-10 08:37:46 [initialization] table users already exists
+localhost:4000: 2016-06-10 08:37:54 [access] ip: 127.0.0.1, browser --> localhost:4000/
+localhost:4000: 2016-06-10 08:37:54 [access] ip: 127.0.0.1, http://localhost:4000/ --> localhost:4000/introduction.html

@@ -1,0 +1,949 @@
+
+
+
+josmith.org: 2015-02-01 06:59:46 [initialization] application restarted
+josmith.org: 2015-02-01 06:59:46 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2015-02-01 11:29:57 [initialization] application restarted
+josmith.org: 2015-02-01 11:29:57 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-01 11:29:57 [access] ip: 180.76.6.50, browser --> www.josmith.org/
+josmith.org: 2015-02-01 11:29:58 [access] ip: 180.76.5.190, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-01 14:03:49 [initialization] application restarted
+josmith.org: 2015-02-01 14:03:49 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-01 14:03:49 [access] ip: 192.99.107.64, browser --> www.josmith.org/
+josmith.org: 2015-02-01 14:38:04 [access] ip: 195.154.226.90, browser --> www.josmith.org/
+
+
+
+josmith.org: 2015-02-01 20:01:23 [initialization] application restarted
+josmith.org: 2015-02-01 20:01:23 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-01 20:01:23 [access] ip: 82.241.232.125, http://forum.alwaysdata.com/viewtopic.php?id=4150 --> www.josmith.org/
+josmith.org: 2015-02-01 20:01:24 [access] ip: 82.241.232.125, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-01 20:02:55 [access] ip: 82.241.232.125, http://www.josmith.org/downloads --> www.josmith.org/downloads/modWsgi.zip
+josmith.org: 2015-02-01 20:03:01 [access] ip: 82.241.232.125, http://www.josmith.org/structure.pyhtml --> www.josmith.org/introduction.html
+josmith.org: 2015-02-01 20:03:33 [access] ip: 82.241.232.125, http://www.josmith.org/downloads --> www.josmith.org/downloads/josmith.zip
+josmith.org: 2015-02-01 20:03:51 [access] ip: 82.241.232.125, http://www.josmith.org/downloads --> www.josmith.org/downloads/josmith.org.zip
+josmith.org: 2015-02-01 22:58:04 [access] ip: 180.76.5.57, browser --> www.josmith.org/
+josmith.org: 2015-02-01 22:58:10 [access] ip: 180.76.5.73, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-02 05:25:05 [initialization] application restarted
+josmith.org: 2015-02-02 05:25:05 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2015-02-02 14:02:31 [initialization] application restarted
+josmith.org: 2015-02-02 14:02:31 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-02 14:03:32 [access] ip: 180.76.6.144, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-02 17:51:13 [initialization] application restarted
+josmith.org: 2015-02-02 17:51:13 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-02 17:51:13 [access] ip: 180.76.5.65, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-02 20:24:52 [initialization] application restarted
+josmith.org: 2015-02-02 20:24:52 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2015-02-02 21:36:02 [initialization] application restarted
+josmith.org: 2015-02-02 21:36:02 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-02 21:36:02 [access] ip: 208.115.111.68, browser --> www.josmith.org/
+josmith.org: 2015-02-02 21:45:03 [access] ip: 77.75.73.32, browser --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-03 04:37:51 [initialization] application restarted
+josmith.org: 2015-02-03 04:37:51 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-03 04:37:51 [access] ip: 66.249.67.62, browser --> www.josmith.org/
+
+
+
+josmith.org: 2015-02-03 13:33:50 [initialization] application restarted
+josmith.org: 2015-02-03 13:33:50 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-03 13:33:50 [access] ip: 108.61.207.87, http://www.josmith.org/ --> www.josmith.org/
+
+
+
+josmith.org: 2015-02-03 19:28:07 [initialization] application restarted
+josmith.org: 2015-02-03 19:28:07 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+
+
+
+josmith.org: 2015-02-04 00:45:38 [initialization] application restarted
+josmith.org: 2015-02-04 00:45:38 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-04 00:45:38 [access] ip: 195.154.226.90, browser --> www.josmith.org/
+
+
+
+josmith.org: 2015-02-04 07:39:11 [initialization] application restarted
+josmith.org: 2015-02-04 07:39:11 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-04 07:39:11 [access] ip: 213.159.38.90, http://forum.josmith.org/ --> forum.josmith.org/
+josmith.org: 2015-02-04 07:39:11 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 07:39:11 [access] ip: 213.159.38.90, http://forum.josmith.org/introduction.html --> forum.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-04 15:35:16 [initialization] application restarted
+josmith.org: 2015-02-04 15:35:16 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-04 15:35:16 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 15:35:16 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 15:35:16 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 15:36:03 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 15:36:03 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 15:36:03 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-04 16:47:17 [initialization] application restarted
+josmith.org: 2015-02-04 16:47:17 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:47:17 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:47:17 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:47:18 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:48:52 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:48:52 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:48:52 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:48:55 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:48:55 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:48:55 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:48:56 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:48:56 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:48:56 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:48:56 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:48:56 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:48:56 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-04 16:49:17 [initialization] application restarted
+josmith.org: 2015-02-04 16:49:17 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:17 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:49:17 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:17 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:49:17 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:49:18 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:49:18 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:18 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:49:18 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:18 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:49:32 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:49:32 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:32 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:49:58 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:49:58 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:49:58 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:51:20 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:51:21 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:51:21 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:51:21 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:51:21 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:51:21 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+josmith.org: 2015-02-04 16:51:22 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-04 16:51:22 [error] Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 171, in get
+    self.content = [self.content.encode ('utf-8-sig')]
+AttributeError: 'list' object has no attribute 'encode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/urlMatcher.py", line 74, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 41, in __init__
+    self.check ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 76, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "/home/sterlicht/josmith/josmithModules/basePages.py", line 177, in get
+    raise notFoundException
+Exception: Static file or dir not found: /home/sterlicht/josmith.org/static/structure.pyhtml
+END DEBUG INFO
+
+josmith.org: 2015-02-04 16:51:22 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html
+
+
+
+josmith.org: 2015-02-05 12:21:21 [initialization] application restarted
+josmith.org: 2015-02-05 12:21:21 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 22, in execute
+    raise exception
+  File "/home/sterlicht/josmith/josmithModules/db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+josmith.org: 2015-02-05 12:21:21 [access] ip: 24.132.47.6, browser --> www.josmith.org/
+josmith.org: 2015-02-05 12:21:21 [access] ip: 24.132.47.6, http://www.josmith.org/ --> www.josmith.org/introduction.html

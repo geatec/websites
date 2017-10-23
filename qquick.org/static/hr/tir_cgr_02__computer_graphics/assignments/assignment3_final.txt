@@ -1,0 +1,34 @@
+In this assigment you will develop an OpenGL application.
+This may be e.g. a simulation, a mathematical graph plotter or a simple game.
+Cooperation in a group of upto 3 participants is encouraged.
+
+There are three phases:
+
+Phase 1. Draw up pointwise requirements, at least five items:
+- What is the purpose of your application (what does it do for the user)
+- Since it is a graphical application, which demands are made on the displayed graphics
+- How does user interaction (mouse, keyboard) take place
+- On which platforms your application has to run
+- What are explicit limitations on the functionality
+
+Before entering phase 2, gain approval for phase 1
+
+Phase 2. Draw up a design, again at least five items:
+- What modules or classes will your application consist of
+- What are the stable interfaces between those modules or classes
+- What development platform or programming language will be used
+- What is the planning (who will work on which module and what are your milestones)
+- How will you test that your application meets the requirements
+
+Before entering phase 3, gain approval for phase 3
+
+Phase 3. Realisation
+- Each group member builds his part as specified in the design
+- Each group member tests his modules and/or classes, if possible insulated from the other parts
+- Code is merged and tested
+- Debugging if needed
+- Document in code by adding limited but effective comments.
+- Use accurate naming of objects, functions, modules etc. !
+
+Give a demo and explain your source code.
+Each group member has to be able to explain all source code.

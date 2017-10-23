@@ -1,0 +1,24 @@
+In this assigment you will make use of transformations without using OpenGL.
+
+Part 1.
+Make a console application that can draw lines consisting of characters.
+The way to do this is to fill an 2-dimensional char array (say A) with blanks.
+Plotting a point at location x, y happens by the assignment A [yMax-y-1,x] = "*".
+
+Part 2.
+Once your program is able to plot arbitrary points in the array (test this!),
+program an algorithm that uses the point plot function to draw lines.
+It doesn't have to be Bresenham, efficiency is not so important here.
+But your lines must have no gaps in them, and it must be possible for lines to run
+in all directions, including horizontal and vertical (test this!).
+
+Part 3.
+Extend your program so that it can draw a cube and project it on the x-y plane.
+The projection is allowed to be simple and non-perspective.
+Leaving out the z coordinate will do, but perspective projection is also ok.
+Test this part of your program before continuing.
+
+Part 4.
+Extend your program to be able to rotate the cube around the z-axis, by the use of
+a transformation matrix. Test this and add a 3 screendumps to your sourcecode
+with different rotation angles.

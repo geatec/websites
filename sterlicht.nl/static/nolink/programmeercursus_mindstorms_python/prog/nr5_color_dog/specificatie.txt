@@ -1,0 +1,25 @@
+Maak een pratende electronische hond met de volgende eigenschappen:
+
+Indien een groen verkeersbord wordt getoond, volgt de hond het bord.
+Dus hij blijft er op af lopen, ondertussen blij kwispelend en pratend over de vriendschap tussen hond en mens.
+
+Indien een rood verkeersbord wordt getoond, ontvlucht de hond het bord.
+Hij wendt zich af, loopt weg, laat zijn staart hangen en moppert over rode borden en mensen in het algemeen.
+
+Zijn kop bevat de kleursensor en beweegt heen en weer om de richting vast te stellen waarin het bord wordt gezien.
+Als hij ergens in de buurt komt en geen groen bord ziet, zorgt de ultrasoon sensor dat hij een willekeurige andere kant op gaat.
+
+Als je de aanraaksensor op z'n kop aait, kwispelt hij snel en vertelt hoe fijn het is, geaaid te worden, en beweegt hij rustig en weer.
+De groene LED's lichten langzaam ritmish afwisselend op.
+
+Als je daarentegen de aanraaksensor op z'n staart aanraakt, gromt en blaft hij, en beweegt onrustig heen en weer.
+De rode LED's flitsen snel afwisselend.
+
+
+
+
+
+
+
+
+  

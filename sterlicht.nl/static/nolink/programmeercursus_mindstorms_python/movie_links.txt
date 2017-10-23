@@ -1,0 +1,3 @@
+butler: https://www.youtube.com/watch?v=hbHqbU1Eo0M
+cobra: https://www.youtube.com/watch?v=eNPwzx2Uygo
+sudoku solver: https://www.youtube.com/watch?v=Mp8Y2yjV4fU

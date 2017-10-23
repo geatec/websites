@@ -1,0 +1,22 @@
+*** Important URL's:
+
+
+http://www.ev3dev.org
+https://media.readthedocs.org/pdf/python-ev3dev/latest/python-ev3dev.pdf
+
+
+*** The first line (shebang line) of the main program file should be:
+
+#!/usr/bin/python3
+
+(So not '#!/usr/bin/dev python3' as posed in the docs)
+
+
+*** Unix line ends should be used
+
+In Notepad++ from the menu pick [Edit][EOL Conversion][Unix/OSX Format]
+
+
+*** After uploading to the EV3, the program files should be made executable (e.g. with FileZilla)
+
+*** Only upload if the program is stopped

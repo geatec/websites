@@ -1,0 +1,24 @@
+Assignment linAlg1:
+
+Write a small program containing 3 functions to do the following:
+
+a. Multiply a 3 x 3 matrix by a 3 x 1 vector, the result will be a 3 x 1 vector.
+b. Multiply a 3 x 3 matrix by another 3 x 3 matrix, the result will be a 3 x 3 matrix.
+
+N.B. The order of the indices is : row x column (so differs from x, y coords)
+It is alright to combine a. and b., writing one function that multiplies
+a matrix of dimensions a x b by a matrix of dimensions b x c,
+yielding a matrix of dimensions a x c.
+
+c. Invert a 3 x 3 matrix using Gauss-Jordan elimination (sweeping)
+
+Check your inversion function by using the result of a.:
+	If A x = b then x = A_inverse b
+or use the result of b. for a check, (unit matrix denoted by I)
+	A A_inverse = I
+	
+Coding style: Don't hang your code in the view tree (event handlers, onClick etc.)
+If you use a GUI, keep your domain classes (Matrix, Vector) and
+your GUI classes separated,communicating via member calls.
+You're not required to uses object orientation for this assignment.
+Functions and arrays will do.

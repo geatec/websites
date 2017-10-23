@@ -1,0 +1,63 @@
+
+
+
+qquick.nl: 2014-04-25 17:14:35 [initialization] application restarted
+qquick.nl: 2014-04-25 17:14:35 [initialization] table users already exists
+qquick.nl: 2014-04-25 17:14:35 [access] ip: 89.99.177.11, browser --> www.qquick.org/
+qquick.nl: 2014-04-25 17:14:36 [access] ip: 89.99.177.11, http://www.qquick.org/ --> www.qquick.org/introduction.html
+qquick.nl: 2014-04-25 18:06:23 [access] ip: 178.85.128.46, http://www.qquick.org/hr/tir_kin_02_artificial_intelligence --> www.qquick.org/hr/tir_kin_02_artificial_intelligence/aaa_all.zip
+qquick.nl: 2014-04-25 19:39:07 [access] ip: 31.3.233.120, browser --> www.qquick.org/
+qquick.nl: 2014-04-25 23:44:49 [access] ip: 180.76.5.22, browser --> www.qquick.org/structure.html
+
+
+
+qquick.nl: 2014-04-26 02:00:51 [initialization] application restarted
+qquick.nl: 2014-04-26 02:00:51 [initialization] table users already exists
+qquick.nl: 2014-04-26 02:00:56 [access] ip: 162.243.119.166, browser --> www.qquick.org/
+qquick.nl: 2014-04-26 02:49:22 [access] ip: 157.55.35.53, browser --> www.qquick.org/support.html
+qquick.nl: 2014-04-26 21:06:17 [access] ip: 66.249.64.171, browser --> www.qquick.org/support.html
+
+
+
+qquick.nl: 2014-04-27 09:19:55 [initialization] application restarted
+qquick.nl: 2014-04-27 09:19:55 [initialization] table users already exists
+
+
+
+qquick.nl: 2014-04-28 08:42:15 [initialization] application restarted
+qquick.nl: 2014-04-28 08:42:15 [initialization] table users already exists
+qquick.nl: 2014-04-28 20:33:53 [access] ip: 137.175.68.219, http://www.qquick.org/eden.html --> www.qquick.org/eden.html
+qquick.nl: 2014-04-28 20:33:53 [access] ip: 137.175.68.219, http://www.qquick.org/ --> www.qquick.org/
+qquick.nl: 2014-04-28 20:33:54 [access] ip: 137.175.68.219, http://www.qquick.org/introduction.html --> www.qquick.org/introduction.html
+qquick.nl: 2014-04-28 20:33:56 [access] ip: 137.175.68.219, http://forum.qquick.org/ --> forum.qquick.org/
+qquick.nl: 2014-04-28 20:33:57 [access] ip: 137.175.68.219, http://forum.qquick.org/introduction.html --> forum.qquick.org/introduction.html
+qquick.nl: 2014-04-29 00:00:19 [access] ip: 178.85.128.46, http://www.qquick.org/hr/tir_kin_02_artificial_intelligence --> www.qquick.org/hr/tir_kin_02_artificial_intelligence/aaa_all.zip
+
+
+
+qquick.nl: 2014-04-29 04:27:39 [initialization] application restarted
+qquick.nl: 2014-04-29 04:27:39 [initialization] table users already exists
+qquick.nl: 2014-04-29 04:27:40 [access] ip: 217.69.133.3, browser --> www.qquick.org/
+qquick.nl: 2014-04-29 10:14:32 [access] ip: 157.56.93.74, browser --> www.qquick.org/femtools.html
+qquick.nl: 2014-04-29 15:44:41 [access] ip: 178.85.128.46, http://www.qquick.org/hr/tir_kin_02_artificial_intelligence --> www.qquick.org/hr/tir_kin_02_artificial_intelligence/aaa_all.zip
+qquick.nl: 2014-04-29 17:07:37 [access] ip: 89.99.177.11, browser --> www.qquick.org/
+qquick.nl: 2014-04-29 17:07:40 [access] ip: 89.99.177.11, browser --> www.qquick.org/
+qquick.nl: 2014-04-29 17:07:40 [access] ip: 89.99.177.11, http://www.qquick.org/ --> www.qquick.org/introduction.html
+qquick.nl: 2014-04-29 17:07:52 [access] ip: 89.99.177.11, http://www.qquick.org/structure.pyhtml --> www.qquick.org/licence.html
+qquick.nl: 2014-04-29 17:07:53 [access] ip: 89.99.177.11, http://www.qquick.org/structure.pyhtml --> www.qquick.org/wave.html
+qquick.nl: 2014-04-29 17:07:54 [access] ip: 89.99.177.11, http://www.qquick.org/structure.pyhtml --> www.qquick.org/eden.html
+qquick.nl: 2014-04-29 17:18:10 [access] ip: 157.55.33.180, browser --> www.qquick.org/eden.html
+
+
+
+qquick.nl: 2014-04-30 02:08:58 [initialization] application restarted
+qquick.nl: 2014-04-30 02:08:58 [initialization] table users already exists
+qquick.nl: 2014-04-30 02:08:59 [access] ip: 66.249.67.1, browser --> www.qquick.org/
+qquick.nl: 2014-04-30 07:51:08 [access] ip: 31.3.233.120, browser --> www.qquick.org/
+qquick.nl: 2014-04-30 10:18:14 [access] ip: 145.24.244.108, browser --> www.qquick.org/
+qquick.nl: 2014-04-30 10:18:14 [access] ip: 145.24.244.108, http://www.qquick.org/ --> www.qquick.org/introduction.html
+qquick.nl: 2014-04-30 10:18:17 [access] ip: 145.24.244.108, http://www.qquick.org/structure.pyhtml --> www.qquick.org/educational.html
+qquick.nl: 2014-04-30 11:59:48 [access] ip: 66.249.67.1, browser --> www.qquick.org/eden.html
+qquick.nl: 2014-04-30 14:38:20 [access] ip: 157.56.92.144, browser --> www.qquick.org/introduction.html
+qquick.nl: 2014-04-30 16:17:43 [access] ip: 157.55.33.101, browser --> www.qquick.org/structure.html
+qquick.nl: 2014-04-30 20:04:03 [access] ip: 217.69.133.9, browser --> www.qquick.org/

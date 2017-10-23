@@ -1,0 +1,4 @@
+http://itee.uq.edu.au/~comp4403/notes/RecursiveDescentParsing.pdf
+http://www.clear.rice.edu/comp412/Lectures/L12TopDownII-2up.pdf
+http://en.wikipedia.org/wiki/Recursive_descent_parser
+http://stackoverflow.com/questions/2245962/is-there-an-alternative-for-flex-bison-that-is-usable-on-8-bit-embedded-systems/2336769#2336769
