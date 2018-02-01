@@ -1,0 +1,73 @@
+
+
+
+localhost:4000: 2018-02-01 09:57:42 [initialization] application restarted
+BEGIN DEBUG INFO
+NoneType: None
+END DEBUG INFO
+
+localhost:4000: 2018-02-01 09:57:42 [initialization] table users already exists
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\db.py", line 56, in createSuperUser
+    self.cs.execute ('CREATE TABLE users (id INTEGER PRIMARY KEY, email_address, password, token)')
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\db.py", line 22, in execute
+    raise exception
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\db.py", line 14, in execute
+    self.cursor.execute (arg1 if arg1 else arg0)
+sqlite3.OperationalError: table users already exists
+END DEBUG INFO
+
+localhost:4000: 2018-02-01 09:57:56 [access] ip: 127.0.0.1, browser --> localhost:4000/
+BEGIN DEBUG INFO
+NoneType: None
+END DEBUG INFO
+
+localhost:4000: 2018-02-01 09:57:56 [error] Traceback (most recent call last):
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 179, in get
+    self.executor (self)
+  File "<string>", line 360, in execute
+  File "D:\activ_tosh\web\websites\transcrypt.org/static\base.py", line 68, in listDemo
+    <textarea class="code ''' + editModes [fileName.split ('.')[-1]] + '" >' + app.readFromFile ('live/transcrypt/demos/' + fileName) + '''</textarea>
+  File "D:\activ_tosh\web\websites\transcrypt.org\site.py", line 69, in readFromFile
+    with open (self.staticPath + '/' + relPathInsideStatic) as aFile:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\activ_tosh\\web\\websites\\transcrypt.org/static/live/transcrypt/demos/hello/hello.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\urlMatcher.py", line 120, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 45, in __init__
+    self.check ()
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 83, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 188, in get
+    raise notFoundException
+Exception: Static file or dir not found: D:/activ_tosh/web/websites/transcrypt.org/static/home
+
+BEGIN DEBUG INFO
+Traceback (most recent call last):
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 179, in get
+    self.executor (self)
+  File "<string>", line 360, in execute
+  File "D:\activ_tosh\web\websites\transcrypt.org/static\base.py", line 68, in listDemo
+    <textarea class="code ''' + editModes [fileName.split ('.')[-1]] + '" >' + app.readFromFile ('live/transcrypt/demos/' + fileName) + '''</textarea>
+  File "D:\activ_tosh\web\websites\transcrypt.org\site.py", line 69, in readFromFile
+    with open (self.staticPath + '/' + relPathInsideStatic) as aFile:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\activ_tosh\\web\\websites\\transcrypt.org/static/live/transcrypt/demos/hello/hello.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\urlMatcher.py", line 120, in callMatching
+    return bestUrlPattern [1] (environ, tuple (bestMatch), *(fixedArgs + args), **kwargs)	# May raise exception
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 45, in __init__
+    self.check ()
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 83, in check
+    self.get () if ok else self.getRedirectToLogin ()
+  File "D:\activ_tosh\web\websites\josmith/josmithModules\basePages.py", line 188, in get
+    raise notFoundException
+Exception: Static file or dir not found: D:/activ_tosh/web/websites/transcrypt.org/static/home
+END DEBUG INFO
+

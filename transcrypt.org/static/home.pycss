@@ -1,7 +1,5 @@
 from base import *
 
-stripe = Stripe ()
-
 def getAll ():
 	return '''
 		.moving .splash {
@@ -60,7 +58,7 @@ def getAll ():
 			padding: 6% 2% 6% 2%;
 		}
 					
-		.moving .summary h1 {
+		.moving .summary h3 {
 			position: relative;
 			color: ''' + white + ''';
 			background-color: ''' + fixedGray + ''';
@@ -74,34 +72,31 @@ def getAll ():
 			margin: 4% 0 0 6%;
 			font-size: 90%;
 		}
+        
+        .moving .hello ol {
+            display: block;
+            padding: 3% 3% 2% 8%;
+            background-color: ''' + veryTransparentLogoGreen + ''';
+        }
 		
-		.moving .flowchart {
-			background-color: ''' + stripe () + ''';
-			clear: both;
-		}
+/*
+        .moving .citation {
+            padding: 0% 15% 0% 15%;
+        }
+        
+        .moving .citation .content {
+            font-size: 95%;
+            font-style: italic;
+            margin-bottom: 5;
+        }
+        
+        .moving .citation .source {
+            font-size: 70%;
+        }
 
 		.moving .flowchart img {
 			width: 100%;
 			max-width: 650;
 		}
-		
-		.moving .introduction {
-			background-color: ''' + stripe () + ''';
-			clear: both;
-		}
-
-		.moving .correspondence {
-			background-color: ''' + stripe () + ''';
-			clear: both;
-		}
-
-		.moving .mix {
-			background-color: ''' + stripe () + ''';
-			clear: both;
-		}
-
-		.moving .free {
-			background-color: ''' + stripe () + ''';
-			clear: both;
-		}
+*/
 	'''

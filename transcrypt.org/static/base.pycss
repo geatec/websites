@@ -15,7 +15,7 @@ def getAll ():
 			visibility: hidden;
 		}
 				
-		h1 {
+		h3 {
 			margin-bottom: 30;
 			padding: 10 1 10 1;
 			text-align: center;
@@ -24,7 +24,7 @@ def getAll ():
 			font-size: 110%;
 		}
 		
-		h2 {
+		h4 {
 			font-size: 100%;
 		}
 		
@@ -133,14 +133,14 @@ def getAll ():
 		
 		.fixed .logo .title {
 			position: absolute;
-			width: 1000;
+			width: 1500;
 			font-style: italic;
 			font-weight: bold;
 		}
 		
 		.fixed .logo .subtitle {
 			position: absolute;
-			width: 1000;
+			width: 1500;
 			color: ''' + white + ''';
 			font-style: italic;
 		}
@@ -211,19 +211,29 @@ def getAll ():
 			margin: 0 20 5 0;
 		}
 		
-		.moving .footer .star-us {
-			float: left;
-			height: 30;
-			margin: 0 100 5 0;
-		}
-		
 		.moving .footer .share img {
 			margin: 0;
 		}
-		
+
+		.moving .footer .star-us {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+        
+		.moving .footer .donate {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+
+		.moving .footer .donate .donate-button {
+            cursor: pointer;
+        }
+        		
 		.moving .footer .prompt {
 			display: inline-block;
-			float: left;
+			float: right;
 			height: 30;
 			margin: 0 0 5 0;
 			color: ''' + darkBrown + ''';
@@ -251,7 +261,7 @@ def getAll ():
 			padding: 0;
 		}
 		
-		.faq div h1 {
+		.faq div h3 {
 			text-align: left;
 		}
 		

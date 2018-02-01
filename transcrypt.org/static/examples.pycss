@@ -1,7 +1,7 @@
 from base import *
 
 def getAll ():
-	return '''
+	return '''       
 		.lane .ios_portrait {
 			display: inline-block;
 			box-sizing: border-box;

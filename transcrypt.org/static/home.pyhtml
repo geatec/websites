@@ -2,6 +2,10 @@ base_pyhtml = self.app.importFromFile ('base.pyhtml', 'base_pyhtml')
 base_pycss = self.app.importFromFile ('base.pycss', 'base_pycss')
 home_pycss = self.app.importFromFile ('home.pycss', 'home_pycss')
 
+from base import Stripe, listDemo, runDemo
+
+stripe = Stripe ()
+
 self.content = '''
 	<html>
 		<head>
@@ -17,13 +21,15 @@ self.content = '''
 			</style>
 		</head>
 		<body>
+            <h2 style="color: white;">python to javascript compiler</h2>
+        
 			''' + base_pyhtml.getFixed () + '''
 
 			<div class="moving">
-				<div class="splash section">
+				<div class="section splash">
 					<div class="announcement-bar">
 						<div class="text lane">
-							Latest stable release: 3.6.54 'Paris'
+                            Latest stable release: 3.6.88 'Paris' - monthly downloads: 13,286
 						</div>
 					</div>
 					
@@ -33,9 +39,9 @@ self.content = '''
 						</div>
 					</div>
 					
-					<div class="summary lane">
+					<div class="lane summary">
 						<div>
-							<h1>Clear standard syntax</h1>
+							<h3>Clear standard syntax</h3>
 							
 							<p>
 							Transcrypt has exactly the same clear, powerful syntax that Python is famous for, without the need for any proprietary extensions.
@@ -44,10 +50,10 @@ self.content = '''
 							It supports string slicing with [i:j:k], matrix and vector operations with +, -, *, / and more, out of the box.
 							
 							<p>
-							It compiles to compact, readable JavaScript that can be debugged from the Python source code using sourcemaps.
+							It precompiles to fast, readable JavaScript that can be debugged from the Python source code using sourcemaps.
 						</div>
 						<div>
-							<h1>Superior scalability</h1>
+							<h3>Superior scalability</h3>
 
 							<p>
 							Python was designed for large scale programs from the ground up.
@@ -59,7 +65,7 @@ self.content = '''
 							Transcrypt comes integrated with a static type validator, a linter and a minifier, enabling effective cooperation of large teams on extensive projects.
 						</div>
 						<div>
-							<h1>One project, one language</h1>
+							<h3>One project, one language</h3>
 							
 							<p>
 							Python is used everywhere at the back-end, from web servers to scientific computing. Now you can use it at the front-end as well.
@@ -69,56 +75,68 @@ self.content = '''
 							
 							<p>
 							Python source code and JavaScript target code roughly have the same size, so your pages load as fast as ever.
-						</div> <!-- summary -->
+						</div>
 					</div>
-				</div>	<!-- splash -->
-				
-				<div class="flowchart lane section">
-					<h1>Installing and using it is simple</h2>
-					
-					<img src="http://www.transcrypt.org/illustrations/workflow.png" alt="Transcrypt workflow">
 				</div>
-				<div class="introduction lane section">		
-					<h1>Harness the power of Python for increasingly complex web applications</h1>
+                
+                <div class="section lane hello" style="background-color:''' + stripe () + '''">
+                    <div id="hello" class="target"></div>
+                    
+                    <h3>Get started: Hello, solar system...</h3>
+                    
+                    <ol>
+                    <li>Download Python 3.6 from <a href="https://www.python.org/downloads" target="_blank">www.python.org</a>.
+                    <li>Install Transcrypt: <i>python -m pip install transcrypt</i>.
+                    <li>Create a folder <i>hello</i> containing <i>hello.html</i> and <i>hello.py</i>
+                    <li>In folder <i>hello</i> type <i>transcrypt -b -m -n hello.py</i>
+                    <li>Open <i>hello.html</i> in your browser to see the result
+                    </ol>
+                    
+                    <p>
+                    ''' + runDemo ('hello') + '''
+                    
+                    <p>
+                    ''' + listDemo ('hello/hello.html', self.app)+ '''
+                    
+                    <p>
+                    ''' + listDemo ('hello/hello.py', self.app)+ '''
+                    
+                    <p>
+                    If you have trouble installing Transcrypt or compiling this example, you'll find additional information in the <a href="docs/html/installation_use.html">getting started chapter</a> of the documentation.
+                </div>
+                
+				<div class="section lane introduction" style="background-color:''' + stripe () + '''">		
+					<h3>Harness the power of Python for increasingly complex web applications</h3>
+                    
+                    <p>
+                    <u>Anything you can do in JavaScript, you can do in Transcrypt</u>. You'll always have immediate access to the newest JavaScript libraries, use the newest DOM functions, interact with the newest HTML or CSS. Calling JavaScript functions from Python, embedding JavaScript code in your Python source, attaching Python event handlers to DOM elements, passing native data between Python and JavaScript, it all happens without any conversion or special syntax. Just join the party without restrictions.
 					
 					<p>
-					Transcrypt produces readable, debuggable, lean and mean JavaScript. The minified <u>downloads are measured in kB's</u> rather than MB's. And it's precompiled for speed. As for the availabity of libraries, a clear choice has been made to seamlessly integrate with the JavaScript universe of free, high-quality web oriented software. No need to reinvent the wheel. Calling JavaScript functions from Python, attaching Python event handlers to DOM elements, passing native data between Python and JavaScript, it all happens without any conversion or special syntax.
-					<br>
+					Transcrypt is precompiled for speed, rather than interpreted in the browser. It produces small, fast, yet readable code. The minified <u>downloads are measured in kB's</u> rather than MB's. 
 					
 					<p>
-					Transcrypt stays as close to the Python original as possible without sacrificing performance. <u>Multiple inheritance</u>, recursive tuple assignment, multi-loop nested list comprehensions, LHS and RHS extended slices, assignment of bound functions, lambdas, named, default, *args and **kwargs parameters, properties, optional operator overloading, iterators, generators, selective exception handling and a hierarchical module system are just a few of its characteristics that make this clear. Transcrypt is parsed by CPython's AST module, so no surprises there.
+					Transcrypt stays as close to the Python original as possible without sacrificing performance. Multiple inheritance, recursive tuple assignment, multi-loop nested list comprehensions, LHS and RHS extended slices, assignment of bound functions, lambdas, named, default, *args and **kwargs parameters, properties, optional operator overloading, iterators, generators, <u>async/await</u>, selective exception handling and a hierarchical module system are just a few of its characteristics that make this clear. Transcrypt is parsed by CPython's AST module, so no surprises there.
 					 
 					<p>
 					Transcrypt features <u>multi-level sourcemaps</u>, so you can debug your application comfortably, working from the Python source code in your browser, even if the generated JavaScript is minified. It also has a unique autotest feature that makes back to back regression testing with CPython a snap.
 
 					<p>
-					Transcrypt comes with 3rd party tools for <u>optional static type validation</u> (experimental), lightweight consistency checks and minification, all at the tip of a command line switch. It can generate code for JavaScript 5 and 6. All tools are fully integrated in the distribution, one simple pip install will get you started. 
-				</div> <!-- introduction -->
+					Transcrypt comes with 3rd party tools for <u>optional static type validation</u>, lightweight consistency checks and minification, all at the tip of a command line switch. It can generate code for JavaScript 5 and 6. All tools are fully integrated in the distribution, one single pip install will put them at your disposal.
+				</div>
 				
-				<div class="correspondence section">
+				<div class="section correspondence" style="background-color:''' + stripe () + '''">
 					<div class="lane">
-						<h1>Even with multiple inheritance there's a simple correspondence between Python and JavaScript</h1>
+						<h3>Even with multiple inheritance there's a simple correspondence between Python and JavaScript</h3>
 						
-						<p>
+                        <p>
 						The ability to understand exactly what's going on under the hood, allows for fine grained optimizations. Speed up an inner loop? Use <i>__pragma__('js',...)</i> to freely mix Python with native JavaScript. Not that you'll need it often... An expression like <i>i+=1</i> is compiled to <i>i++</i>, and optional call caching bypasses the prototype chain, making repeated function calls even faster than handwritten JavaScript.
 					</div>
 					
 					<img src="illustrations/class_compare_doc.png" alt="Python and JavaScript side by side">
-				</div> <!-- correspondence -->
-				
-				<div class="mix section">
-					<div class="lane">
-						<h1>Transcrypt can be mixed seamlessly with JavaScript and HTML</h1>
-						
-						<p>
-						Anything you can do in JavaScript, you can do in Transcrypt. You'll always have immediate access to the newest libraries, use the newest DOM functions, interact with the newest HTML or CSS. Just join the party without restrictions.
-					</div>
-					
-					<img src="illustrations/hello_doc.png" alt="Seamless mix with JavaScript and HTML">
-				</div> <!-- mix -->
-				
-				<div class="pragmas lane section">
-					<h1>Transcrypt is suitable for a broad area of applications</h1>
+				</div>
+								
+				<div class="section lane pragmas" style="background-color:''' + stripe () + '''">
+					<h3>Transcrypt is suitable for a broad area of applications</h3>
 					
 					<p>
 					Transcrypt supports customization through the use of <i>pragmas</i>. Pragmas are function calls that allow you to switch on and off compiler facilities locally, to conditionally compile code, comparable to the use of <i>#ifdef...#endif</i> and <i>#ifndef...#endif</i> in C++ and to include native JavaScript code anywhere in your program. They also allow efficient, selective operator overloading.
@@ -152,12 +170,12 @@ self.content = '''
  				</div>
 				
 				
-				<div class="free lane section">
-					<h1>It's free. It's open. It's yours.</h1>
+				<div class="section lane free" style="background-color:''' + stripe () + '''">
+					<h3>It's free. It's open. It's yours.</h3>
 					
 					<p>
 					Transcrypt is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> open source license. You can download the source code, modify it, keep it in a locker, cut and paste from it, contribute to it, or make it part of your product.
-				</div> <!-- free -->
+				</div>
 				
 				''' + base_pyhtml.getFooter () + '''
 			</div> <!-- moving -->

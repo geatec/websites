@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "D:/activ_tosh/web/sites/transcrypt_new.org/static/__javascript__/base.mod.js",
+	"sources": [
+		"D:/activ_tosh/web/sites/transcrypt_new.org/static/base.py"
+	],
+	"sourcesContent": [
+		"def getRgba (*color):\n\treturn 'rgba({},{},{},{})'.format (*color)\n\t\ndef getHex (*color):\n\tresult = ''\n\tfor component in color [:3]:\n\t\tresult += hexDigits [component // 16] + hexDigits [component % 16]\n\treturn result\n\t\nhexDigits = '0123456789abcdef'\n\nblack = getHex (0,0,0,1)\nwhite = getHex (255, 255, 255, 1)\n\nlogoRed = getHex (255, 68, 34, 1)\nlogoGreen = getHex (34, 136, 0, 1)\nlogoBlue = getHex (51, 102, 255, 1)\nlogoYellow = getHex (255, 176, 0, 1)\n\ndarkBrown = getHex (102, 68, 34, 1)\nlightBrown = getHex (170, 119, 68, 1)\n\ntransparentLogoGreen = getRgba (34, 136, 0, 0.8)\nveryTransparentLogoGreen = getRgba (34, 136, 0, 0.1)\n\nlightGray = getHex (245, 245, 245)\nmiddleGray = getHex (231, 231, 231)\ndarkGray = getHex (208,208,208)\n\npanoramaPink = getHex (229, 217, 217)\n\nclass Stripe:\n\tdef __init__ (self, colors = [white, lightGray]):\n\t\tself.colors = colors;\n\t\tself.nColors = len (self.colors)\n\t\tself.iColor = -1\n\n\tdef __call__ (self):\n\t\tself.iColor = (self.iColor + 1) % self.nColors\n\t\treturn self.colors [self.iColor]\n\t\t\ndef indent (plainText):\n\treturn '\\n'.join (['    ' + line for line in plainText.replace ('\\t', '    ') .split ('\\n')])\n\t\t\ndef encodeTags (plainText):\n\treturn plainText.replace ('<', '&lt;') .replace ('>', '&gt;')\n\ndef decodeTags (encodedText):\n\treturn encodedText.replace ('&lt;', '<') .replace ('&gt;', '>')\n\t\t"
+	],
+	"mappings": "AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACA;AAAA;AAEA;AAAA;AACA;AACA;AAAA;AAAA;AAAA;AAAA;AAEA;AAAA;AAEA;AAEA;AACA;AAEA;AACA;AACA;AACA;AAEA;AACA;AAEA;AACA;AAEA;AACA;AACA;AAEA;AAEA;AACA;AAAA;AAAA;AAAA;AACA;AACA;AACA;AAAA;AAEA;AACA;AACA;AAAA;AAAA;AAEA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA;AACA;AAAA;AAEA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA"
+}

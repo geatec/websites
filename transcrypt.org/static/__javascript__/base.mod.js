@@ -4,6 +4,7 @@
 			__all__: {
 				__inited__: false,
 				__init__: function (__all__) {
+					var __name__ = 'base';
 					var getRgba = function () {
 						var color = tuple ([].slice.apply (arguments).slice (0));
 						return 'rgba({},{},{},{})'.format.apply (null, color);
@@ -12,9 +13,9 @@
 						var color = tuple ([].slice.apply (arguments).slice (0));
 						var result = '';
 						var __iterable0__ = color.__getslice__ (0, 3, 1);
-						for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+						for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 							var component = __iterable0__ [__index0__];
-							result += hexDigits [Math.floor (component / 16)] + hexDigits [component % 16];
+							result += hexDigits [Math.floor (component / 16)] + hexDigits [__mod__ (component, 16)];
 						}
 						return result;
 					};
@@ -39,8 +40,9 @@
 					var panoramaPink = getHex (229, 217, 217);
 					var panoramaPurple = getHex (41, 23, 23);
 					var Stripe = __class__ ('Stripe', [object], {
+						__module__: __name__,
 						get __init__ () {return __get__ (this, function (self, colors) {
-							if (typeof colors == 'undefined' || (colors != null && colors .__class__ == __kwargdict__)) {;
+							if (typeof colors == 'undefined' || (colors != null && colors .hasOwnProperty ("__kwargtrans__"))) {;
 								var colors = list ([white, lightGray]);
 							};
 							self.colors = colors;
@@ -48,20 +50,20 @@
 							self.iColor = -(1);
 						});},
 						get __call__ () {return __get__ (this, function (self) {
-							self.iColor = (self.iColor + 1) % self.nColors;
+							self.iColor = __mod__ (self.iColor + 1, self.nColors);
 							return self.colors [self.iColor];
 						});}
 					});
 					var indent = function (plainText) {
-						return '\n'.join (function () {
+						return '\n'.join ((function () {
 							var __accu0__ = [];
 							var __iterable0__ = plainText.py_replace ('\t', '    ').py_split ('\n');
-							for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+							for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 								var line = __iterable0__ [__index0__];
 								__accu0__.append ('    ' + line);
 							}
 							return __accu0__;
-						} ());
+						}) ());
 					};
 					var encodeTags = function (plainText) {
 						return plainText.py_replace ('<', '&lt;').py_replace ('>', '&gt;');
@@ -69,8 +71,16 @@
 					var decodeTags = function (encodedText) {
 						return encodedText.py_replace ('&lt;', '<').py_replace ('&gt;', '>');
 					};
+					var listDemo = function (fileName, app) {
+						var editModes = dict ({'html': 'htmlmixed', 'py': 'python', 'js': 'javascript', 'css': 'css', 'manifest': 'htmlmixed'});
+						return ((((('\n        Code in ' + fileName) + ':\n        <textarea class="code ') + editModes [fileName.py_split ('.') [-(1)]]) + '" >') + app.readFromFile ('live/transcrypt/demos/' + fileName)) + '</textarea>\n    ';
+					};
+					var runDemo = function (py_name) {
+						return ((((('\n        <a class="run" href="live/transcrypt/demos/' + py_name) + '/') + py_name) + '.min.html" target="_blank">\n            Run the \'') + py_name) + "' example\n        </a>\n    ";
+					};
 					__pragma__ ('<all>')
 						__all__.Stripe = Stripe;
+						__all__.__name__ = __name__;
 						__all__.black = black;
 						__all__.darkBrown = darkBrown;
 						__all__.darkGray = darkGray;
@@ -83,6 +93,7 @@
 						__all__.indent = indent;
 						__all__.lightBrown = lightBrown;
 						__all__.lightGray = lightGray;
+						__all__.listDemo = listDemo;
 						__all__.logoBlue = logoBlue;
 						__all__.logoGreen = logoGreen;
 						__all__.logoRed = logoRed;
@@ -90,6 +101,7 @@
 						__all__.middleGray = middleGray;
 						__all__.panoramaPink = panoramaPink;
 						__all__.panoramaPurple = panoramaPurple;
+						__all__.runDemo = runDemo;
 						__all__.splashGray = splashGray;
 						__all__.transparentLogoBlue = transparentLogoBlue;
 						__all__.transparentLogoGreen = transparentLogoGreen;

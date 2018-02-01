@@ -1,12 +1,12 @@
 def getRgba (*color):
-	return 'rgba({},{},{},{})'.format (*color)
-	
+    return 'rgba({},{},{},{})'.format (*color)
+    
 def getHex (*color):
-	result = ''
-	for component in color [:3]:
-		result += hexDigits [component // 16] + hexDigits [component % 16]
-	return result
-	
+    result = ''
+    for component in color [:3]:
+        result += hexDigits [component // 16] + hexDigits [component % 16]
+    return result
+    
 hexDigits = '0123456789abcdef'
 
 black = getHex (0,0,0,1)
@@ -36,21 +36,42 @@ panoramaPink = getHex (229, 217, 217)
 panoramaPurple = getHex (41, 23, 23)
 
 class Stripe:
-	def __init__ (self, colors = [white, lightGray]):
-		self.colors = colors;
-		self.nColors = len (self.colors)
-		self.iColor = -1
+    def __init__ (self, colors = [white, lightGray]):
+        self.colors = colors;
+        self.nColors = len (self.colors)
+        self.iColor = -1
 
-	def __call__ (self):
-		self.iColor = (self.iColor + 1) % self.nColors
-		return self.colors [self.iColor]
-		
+    def __call__ (self):
+        self.iColor = (self.iColor + 1) % self.nColors
+        return self.colors [self.iColor]
+        
 def indent (plainText):
-	return '\n'.join (['    ' + line for line in plainText.replace ('\t', '    ') .split ('\n')])
-		
+    return '\n'.join (['    ' + line for line in plainText.replace ('\t', '    ') .split ('\n')])
+        
 def encodeTags (plainText):
-	return plainText.replace ('<', '&lt;') .replace ('>', '&gt;')
+    return plainText.replace ('<', '&lt;') .replace ('>', '&gt;')
 
 def decodeTags (encodedText):
-	return encodedText.replace ('&lt;', '<') .replace ('&gt;', '>')
-		
+    return encodedText.replace ('&lt;', '<') .replace ('&gt;', '>')
+    
+def listDemo (fileName, app):
+    editModes = {
+        'html': 'htmlmixed',
+        'py': 'python',
+        'js': 'javascript',
+        'css': 'css',
+        'manifest': 'htmlmixed'
+    }
+    
+    return '''
+        Code in ''' + fileName + ''':
+        <textarea class="code ''' + editModes [fileName.split ('.')[-1]] + '" >' + app.readFromFile ('live/transcrypt/demos/' + fileName) + '''</textarea>
+    '''
+    
+def runDemo (name):
+    return '''
+        <a class="run" href="live/transcrypt/demos/''' + name + '/' + name + '''.min.html" target="_blank">
+            Run the \'''' + name + '''\' example
+        </a>
+    '''
+    

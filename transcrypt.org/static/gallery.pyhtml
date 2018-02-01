@@ -32,37 +32,55 @@ self.content = '''
 					</div -->
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="http://ericbutlerlab.com/websoftware" target="_blank">
-							<img src="illustrations_gallery/butlerlab.png" alt="client and server html generator">
-							<div><div>Ecology and evolution simulators<br><br>http://ericbutlerlab.com/websoftware</div></div>
+							<img src="illustrations_gallery/butlerlab.png" alt="Ecology and evolution simualators">
+							<div><div>Ecology and evolution simulators, written in Transcrypt<br><br>http://ericbutlerlab.com/websoftware</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="https://github.com/Michael-F-Ellis/NearlyPurePythonWebAppDemo" target="_blank">
-							<img src="illustrations_gallery/htmltree.png" alt="client and server html generator">
+							<img src="illustrations_gallery/htmltree.png" alt="Client and server html generator">
 							<div><div>HTML generator using Transcrypt and Bottle<br><br>https://github.com/Michael-F-Ellis/NearlyPurePythonWebAppDemo</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="https://github.com/RunasSudo/Eos" target="_blank">
+							<img src="illustrations_gallery/eos.png" alt="Electronic voting system">
+							<div><div>Electronic voting system, portable between CPython and Transcrypt<br><br>https://github.com/RunasSudo/Eos</div></div>
+						</a>		
+					</div>
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="https://github.com/doconix/pyreact" target="_blank">
+							<img src="illustrations_gallery/pyreact.png" alt="PyReact = React + Transcrypt">
+							<div><div>PyReact = React + Transcrypt<br><br>https://github.com/doconix/pyreact</div></div>
+						</a>		
+					</div>
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="https://github.com/pjbonestroo/PagedList" target="_blank">
+							<img src="illustrations_gallery/pagedlist.png" alt="JavaScript PagedList component written in Transcrypt">
+							<div><div>PagedList JavaScript component written in Transcrypt<br><br>https://github.com/pjbonestroo/PagedList</div></div>
+						</a>		
+					</div>
+					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="http://www.transcrypt.org/live/turtle_site/turtle_site.html" target="_blank">
-							<img src="illustrations_gallery/sterlicht.png" alt="draw your own star">
+							<img src="illustrations_gallery/sterlicht.png" alt="Draw your own star">
 							<div><div>Astronomy lessons for kids<br><br>http://www.sterlicht.nl, click on ''Schets je eigen ster' in the left pane</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="http://www.liag.nl" target="_blank">
-							<img src="illustrations_gallery/liag.png" alt="liag bouwadvies">
+							<img src="illustrations_gallery/liag.png" alt="Liag bouwadvies">
 							<div><div>Architects and building advisors<br><br>http://www.liag.nl</div></div>
 						</a>
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="http://www.mastermove.info/index_en" target="_blank">
-							<img src="illustrations_gallery/mastermove.png" alt="mastermove it education">
+							<img src="illustrations_gallery/mastermove.png" alt="Mastermove IT education">
 							<div><div>Individualized IT training following the master, journeyman, apprentice principle as used in gilds<br><br> http://www.mastermove.info</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<a href="https://github.com/artyprog/GFK" target="_blank">
-							<img src="illustrations_gallery/gfk.png" alt="memory">
+							<img src="illustrations_gallery/gfk.png" alt="Memory">
 							<div><div>Games to teach Python programming to kids<br><br> https://github.com/artyprog/GFK, click on 'Memory' at the bottom of the page</div></div>
 						</a>
 					</div>

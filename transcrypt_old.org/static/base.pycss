@@ -1,0 +1,294 @@
+from base import *
+
+def getAll ():
+	return '''
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: arial;
+		}
+		
+		html {
+			visibility: hidden;
+		}
+				
+		h3 {
+			margin-bottom: 30;
+			padding: 10 1 10 1;
+			text-align: center;
+			color: ''' + logoGreen + ''';
+			background-color: ''' + panoramaPink + ''';
+			font-size: 110%;
+		}
+		
+		h4 {
+			font-size: 100%;
+		}
+		
+		p {
+			margin-top: 15;
+			margin-bottom: 15;
+		}
+		
+		ul li {
+			margin-bottom: 10;
+			list-style: square;
+		}
+		
+		ol li {
+			margin-bottom: 10;
+		}
+		
+		img {
+			display: block;
+			margin: 40 auto 40 auto;
+			max-width: 96%;
+		}
+				
+		strong {
+			color:''' + darkBrown + ''';
+		}
+
+		iframe {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.clear {
+			clear: both;
+		}
+			
+		.formulas {
+			margin-top: 40;
+			margin-bottom: 40;
+		}
+		
+		.formula {
+			display: block;
+			padding: 10 0 10 20;
+			color: ''' + logoBlue + ''';
+			font-size: 95%;
+		}
+		
+		.lane img {
+			max-width: 100%;
+		}
+		
+		.section {
+			position: relative;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		
+		.splash {
+			padding-top: 0px;
+		}
+		
+		.fixed {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			margin: 0;
+			z-index: 1;
+		}
+		
+		.fixed .logo-bar {
+			position: relative;
+			width: 100%;
+			height: 69%;
+			background-color: ''' + fixedGray + ''';
+		}
+
+		.fixed .logo {
+			position: relative;
+			width: 1000;
+			cursor: pointer;
+		}
+		
+		.logo-red {
+			color: ''' + logoRed + ''';
+		}
+		
+		.logo-green {
+			color: ''' + logoGreen + ''';
+		}
+		
+		.logo-blue {
+			color: ''' + logoBlue + ''';
+		}
+		
+		.logo-yellow {
+			color: ''' + logoYellow + ''';
+		}
+
+		.fixed .logo img {
+			display: block;
+			position: absolute;
+			margin: 0;
+		}
+		
+		.fixed .logo .title {
+			position: absolute;
+			width: 1000;
+			font-style: italic;
+			font-weight: bold;
+		}
+		
+		.fixed .logo .subtitle {
+			position: absolute;
+			width: 1000;
+			color: ''' + white + ''';
+			font-style: italic;
+		}
+		
+		.fixed .menu-bar {
+			position: relative;
+			width: 100%;
+			height: 31%;
+			padding: 0% 10% 0% 10%;
+			color: ''' + black + ''';
+			background-color: ''' + white + ''';
+			box-shadow: 0px 2px 4px lightgray;
+			font-family: open sans, arial, sans serif;
+			font-weight: 100;
+		}
+		
+		.fixed .menu-bar .button {
+			position: relative;
+			float: left;
+			overflow: hide;
+			height: 100%;
+			width: 20%;
+			cursor: pointer;
+			text-align: center;
+		}
+		
+		.fixed .menu-bar .text {
+			position: relative;
+			top: 25%;
+			text-align: center;
+		}
+		
+		.fixed .fork-me img {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.moving {
+			position: absolute;
+			width: 100%;
+		}
+		
+		.moving .target {
+			position: relative;
+		}
+		
+		.moving .footer {
+			position: relative;
+			overflow: hidden;
+			padding: 20 0 40 0;
+			background-color: ''' + panoramaPink + ''';
+		}
+		
+		.moving .footer .obey-padding {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.moving .footer .follow {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+		
+		.moving .footer .share {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+		
+		.moving .footer .share img {
+			margin: 0;
+		}
+
+		.moving .footer .star-us {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+        
+		.moving .footer .donate {
+			float: left;
+			height: 30;
+			margin: 0 20 5 0;
+		}
+
+		.moving .footer .donate .donate-button {
+            cursor: pointer;
+        }
+        		
+		.moving .footer .prompt {
+			display: inline-block;
+			float: right;
+			height: 30;
+			margin: 0 0 5 0;
+			color: ''' + darkBrown + ''';
+			font-family: "Courier New", courier, monospace; 
+			font-weight: bold;
+			font-size: 70%;
+		}
+		
+		.mixed-link {
+			display: inline-block;
+			margin: 0 0 5 0;
+		}
+		
+		.mixed-link img {
+			display: inline-block;
+			width: 40;
+			height: 40;
+			margin: 0 10 -7 0;
+		}
+		
+		.faq div {
+			font-size: 95%;
+			background-color: ''' + veryTransparentLogoBlue + ''';
+			margin: 0;
+			padding: 0;
+		}
+		
+		.faq div h3 {
+			text-align: left;
+		}
+		
+		.blink {
+			animation: blinker 1s steps(2, start) infinite;
+		}
+		
+		@keyframes blinker {  
+			to {visibility: hidden;}
+		}
+		
+		.run {
+			display: block;
+			margin: 30 0 30 0;
+		}
+		
+		.CodeMirror {
+			position: relative;
+			height: auto;
+			width: 100%;
+			margin: 10 auto 40 auto;
+			padding: 20 0 20 0;	/* Can't add hor. padding, will widen element, so we just prepend tabs */
+			background-color: ''' + veryTransparentLogoGreen + ''' ;
+			font-size: 85%;
+			font-weight: bold;
+			font-family: "Courier New", courier, monospace; 
+			z-index: 0;	/* CodeMirror needs to be forced behind fixed part */
+		}
+	'''
+	

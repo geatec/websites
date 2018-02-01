@@ -13,7 +13,9 @@
 		var run = function () {
 			var success = function (result) {
 				turtle.reset ();
+				var rnd = random;
 				eval (result);
+				random = rnd;
 			};
 			var fail = function (a, b, c) {
 				print ('Run error:', a, b, c);
@@ -21,20 +23,27 @@
 			$.ajax (dict ({'url': 'http://www.transcrypt.org/compile', 'type': 'POST', 'data': JSON.stringify (editor.getValue ()), 'dataType': 'json', 'contentType': 'application/json', 'success': success, 'fail': fail}));
 		};
 		var mail = function () {
-			window.location.href = '\n\t\tmailto:{}\n\t\t?body={}\n\t\t&subject=Turtle graphics from www.transcrypt.org\n\t'.format (escape (document.getElementById ('mail_address').value), editor.getValue ().py_replace ('\n', '%0D%0A').py_replace ('\t', '    '));
+			var success = function (result) {
+				print (result);
+			};
+			var fail = function (a, b, c) {
+				print ('Run error:', a, b, c);
+			};
+			$.ajax (dict ({'url': 'http://www.transcrypt.org/mail', 'type': 'POST', 'data': JSON.stringify (list ([document.getElementById ('mail_address').value, editor.getValue ()])), 'dataType': 'json', 'contentType': 'application/json', 'success': success, 'fail': fail}));
 		};
 		var selectExample = function () {
 			var success = function (result) {
 				editor.setValue (result [0]);
 				turtle.reset ();
 				window.terminate = true;
+				console.log (result [1]);
 				eval (result [1]);
 			};
 			var fail = function (a, b, c) {
 				print ('Select example error:', a, b, c);
 			};
-			var selector = document.getElementById ('select_example');
-			$.ajax (dict ({'url': 'http://www.transcrypt.org/example', 'type': 'POST', 'data': JSON.stringify (selector.options [selector.selectedIndex].value), 'dataType': 'json', 'contentType': 'application/json', 'success': success, 'fail': fail}));
+			var py_selector = document.getElementById ('select_example');
+			$.ajax (dict ({'url': 'http://www.transcrypt.org/example', 'type': 'POST', 'data': JSON.stringify (py_selector.options [py_selector.selectedIndex].value), 'dataType': 'json', 'contentType': 'application/json', 'success': success, 'fail': fail}));
 		};
 		selectExample ();
 		__pragma__ ('<use>' +

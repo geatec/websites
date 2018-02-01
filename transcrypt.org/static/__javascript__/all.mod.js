@@ -1,5 +1,7 @@
 	(function () {
+		var __name__ = '__main__';
 		var Stripe = __init__ (__world__.base).Stripe;
+		var __name__ = __init__ (__world__.base).__name__;
 		var black = __init__ (__world__.base).black;
 		var darkBrown = __init__ (__world__.base).darkBrown;
 		var darkGray = __init__ (__world__.base).darkGray;
@@ -12,6 +14,7 @@
 		var indent = __init__ (__world__.base).indent;
 		var lightBrown = __init__ (__world__.base).lightBrown;
 		var lightGray = __init__ (__world__.base).lightGray;
+		var listDemo = __init__ (__world__.base).listDemo;
 		var logoBlue = __init__ (__world__.base).logoBlue;
 		var logoGreen = __init__ (__world__.base).logoGreen;
 		var logoRed = __init__ (__world__.base).logoRed;
@@ -19,6 +22,7 @@
 		var middleGray = __init__ (__world__.base).middleGray;
 		var panoramaPink = __init__ (__world__.base).panoramaPink;
 		var panoramaPurple = __init__ (__world__.base).panoramaPurple;
+		var runDemo = __init__ (__world__.base).runDemo;
 		var splashGray = __init__ (__world__.base).splashGray;
 		var transparentLogoBlue = __init__ (__world__.base).transparentLogoBlue;
 		var transparentLogoGreen = __init__ (__world__.base).transparentLogoGreen;
@@ -26,12 +30,18 @@
 		var veryTransparentLogoGreen = __init__ (__world__.base).veryTransparentLogoGreen;
 		var white = __init__ (__world__.base).white;
 		var All = __class__ ('All', [object], {
+			__module__: __name__,
 			get __init__ () {return __get__ (this, function (self, subjectName) {
 				self.subjectName = subjectName;
 				self.subjectNames = list (['home', 'documentation', 'examples', 'download', 'contribute', 'gallery']);
 				self.menuIndex = self.subjectNames.index (self.subjectName) - 1;
 				self.landscapeButtonTexts = list (['DOCUMENTATION', 'SAMPLE CODE', 'DOWNLOAD', 'PARTICIPATE', 'GALLERY']);
 				self.portraitButtonTexts = list (['DOCS', 'SAMPLES', 'GET IT', 'JOIN', 'GALLERY']);
+				
+				            var isApple = navigator.userAgent.match (/iPhone|iPad|ipos/i);
+				        
+				self.defaultPixelRatio = (isApple ? window.devicePixelRatio : 1);
+				self.accessibilityZoomThreshold = 1.3;
 				self.all = document.querySelector ('*');
 				self.body = document.querySelector ('body');
 				self.html = document.querySelector ('html');
@@ -63,7 +73,7 @@
 					return self.onPressButton (-(1));
 				});
 				var __iterable0__ = enumerate (self.buttons);
-				for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+				for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 					var __left0__ = __iterable0__ [__index0__];
 					var index = __left0__ [0];
 					var button = __left0__ [1];
@@ -85,10 +95,10 @@
 					button.style.backgroundColor = (index == self.menuIndex ? middleGray : 'transparent');
 				}
 				var __iterable0__ = list (['htmlmixed', 'python', 'javascript']);
-				for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+				for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 					var editMode = __iterable0__ [__index0__];
 					var __iterable1__ = list (document.querySelectorAll ('.code.{}'.format (editMode)));
-					for (var __index1__ = 0; __index1__ < __iterable1__.length; __index1__++) {
+					for (var __index1__ = 0; __index1__ < len (__iterable1__); __index1__++) {
 						var code = __iterable1__ [__index1__];
 						var editor = CodeMirror.fromTextArea (code, dict ({'mode': dict ({'name': editMode, 'version': 3, 'singleLineStringErrors': false}), 'lineWrapping': true, 'readOnly': true}));
 						var charWidth = editor.defaultCharWidth ();
@@ -106,13 +116,34 @@
 				self.windowWidth = window.innerWidth;
 				self.windowHeight = window.innerHeight;
 				self.windowArea = Math.sqrt (self.windowHeight * self.windowWidth);
-				self.oldLandscape = self.landscape;
-				self.landscape = self.windowWidth > self.windowHeight;
-				if (forceReorient || self.landscape != self.oldLandcape) {
-					self.reorient ();
+				try {
 					self.oldLandscape = self.landscape;
 				}
-				self.all.style.fontSize = (self.landscape ? 0.014 : 0.025) * self.windowArea;
+				catch (__except0__) {
+					// pass;
+				}
+				self.landscape = self.windowWidth > self.windowHeight;
+				try {
+					self.oldZoomFactor = self.zoomFactor;
+				}
+				catch (__except0__) {
+					// pass;
+				}
+				self.zoomFactor = window.devicePixelRatio / self.defaultPixelRatio;
+				try {
+					self.oldAccessible = self.accessible;
+				}
+				catch (__except0__) {
+					// pass;
+				}
+				self.accessible = self.zoomFactor > self.accessibilityZoomThreshold;
+				if (forceReorient || self.landscape != self.oldLandcape || self.zoomFactor != self.oldZoomFactor || self.accessible != self.oldAccessible) {
+					self.reorient ();
+					self.oldLandscape = self.landscape;
+					self.oldZoomFactor = self.zoomFactor;
+					self.oldAccessible = self.accessible;
+				}
+				self.all.style.fontSize = (self.zoomFactor * (self.landscape ? 0.014 : 0.025)) * self.windowArea;
 				self.fixed.style.height = 0.15 * self.windowHeight;
 				self.logo.style.top = 0.01 * self.windowHeight;
 				self.logoImage.style.width = 0.08 * self.windowHeight;
@@ -121,7 +152,7 @@
 				self.logoTitle.style.top = -(0.01) * self.windowHeight;
 				self.logoTitle.style.fontSize = 0.06 * self.windowHeight;
 				var __iterable0__ = self.logoTitleSpans;
-				for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+				for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 					var logoTitleSpan = __iterable0__ [__index0__];
 					logoTitleSpan.style.marginRight = -(0.02) * self.windowHeight;
 				}
@@ -130,7 +161,7 @@
 				self.logoSubtitle.style.fontSize = 0.021 * self.windowHeight;
 				self.moving.style.top = 0.15 * self.windowHeight;
 				var __iterable0__ = self.movingTargets;
-				for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+				for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 					var movingTarget = __iterable0__ [__index0__];
 					movingTarget.style.top = -(0.15) * self.windowHeight;
 				}
@@ -139,7 +170,7 @@
 					self.announcementBar.style.height = 0.04 * self.windowHeight;
 					self.panorama.style.height = 0.35 * self.windowHeight;
 					var __iterable0__ = self.summaryDivs;
-					for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+					for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 						var summaryDiv = __iterable0__ [__index0__];
 						summaryDiv.style.float = (self.landscape ? 'left' : 'top');
 						summaryDiv.style.width = (self.landscape ? '29%' : '95%');
@@ -147,9 +178,9 @@
 				}
 			});},
 			get reorient () {return __get__ (this, function (self) {
-				if (self.landscape) {
+				if (self.landscape && !(self.accessible)) {
 					var __iterable0__ = self.lanes;
-					for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+					for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 						var lane = __iterable0__ [__index0__];
 						lane.style.width = '60%';
 						lane.style.paddingLeft = '20%';
@@ -157,7 +188,7 @@
 					}
 					self.forkMe.style.visibility = (self.windowHeight > 700 ? 'visible' : 'hidden');
 					var __iterable0__ = enumerate (self.buttonTexts);
-					for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+					for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 						var __left0__ = __iterable0__ [__index0__];
 						var index = __left0__ [0];
 						var buttonText = __left0__ [1];
@@ -171,7 +202,7 @@
 				}
 				else {
 					var __iterable0__ = self.lanes;
-					for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+					for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 						var lane = __iterable0__ [__index0__];
 						lane.style.width = '94%';
 						lane.style.paddingLeft = '3%';
@@ -179,7 +210,7 @@
 					}
 					self.forkMe.style.visibility = 'hidden';
 					var __iterable0__ = enumerate (self.buttonTexts);
-					for (var __index0__ = 0; __index0__ < __iterable0__.length; __index0__++) {
+					for (var __index0__ = 0; __index0__ < len (__iterable0__); __index0__++) {
 						var __left0__ = __iterable0__ [__index0__];
 						var index = __left0__ [0];
 						var buttonText = __left0__ [1];
@@ -208,6 +239,7 @@
 		__pragma__ ('<all>')
 			__all__.All = All;
 			__all__.Stripe = Stripe;
+			__all__.__name__ = __name__;
 			__all__.black = black;
 			__all__.darkBrown = darkBrown;
 			__all__.darkGray = darkGray;
@@ -220,6 +252,7 @@
 			__all__.indent = indent;
 			__all__.lightBrown = lightBrown;
 			__all__.lightGray = lightGray;
+			__all__.listDemo = listDemo;
 			__all__.logoBlue = logoBlue;
 			__all__.logoGreen = logoGreen;
 			__all__.logoRed = logoRed;
@@ -227,6 +260,7 @@
 			__all__.middleGray = middleGray;
 			__all__.panoramaPink = panoramaPink;
 			__all__.panoramaPurple = panoramaPurple;
+			__all__.runDemo = runDemo;
 			__all__.splashGray = splashGray;
 			__all__.transparentLogoBlue = transparentLogoBlue;
 			__all__.transparentLogoGreen = transparentLogoGreen;

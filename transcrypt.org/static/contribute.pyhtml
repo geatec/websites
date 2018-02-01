@@ -25,7 +25,7 @@ self.content = '''
 			<div class="moving">
 				<div class="contribute">
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<h1>Give feedback</h1>
+						<h3>Give feedback</h3>
 						
 						<p>
 						 <a class='mixed-link' href="https://github.com/JdeH/Transcrypt" target="_blank"><img src="illustrations/logo_github.png"></img>GitHub</a> is the best channel to give feedback to the developers of Transcrypt or to contribute in general.<br>
@@ -41,7 +41,7 @@ self.content = '''
 					</div>
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<h1>Contribute to the examples and to the documentation</h1>
+						<h3>Contribute to the examples and to the documentation</h3>
 						
 						<p>
 						The availability of small, diverse examples enables people to become quickly acquainted with Transcrypt. You're invited to share what you've learned, e.g. using GitHub issues. Such examples may become part of the documentation.
@@ -54,7 +54,7 @@ self.content = '''
 					</div>
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<h1>Contribute to the code</h1>
+						<h3>Contribute to the code</h3>
 						
 						<p>
 						Another way to contribute to Transcrypt is to improve or augment the code. Many people have already contributed fixes and enhancements, mostly as GitHub issues. If you decide to contribute in this way, please keep the design goals in mind. Simple and straight: Transcrypt aims at approaching CPython as closely as possible while remaining lean, fast and open. This leads to the following guidelines:
@@ -73,14 +73,14 @@ self.content = '''
 					</div>
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<h1>Spread the word</h1>
+						<h3>Spread the word</h3>
 						
 						<p>
 						Do you like Transcrypt? Does it help you to write better software or to have more pleaure in writing it? Talk about it with colleagues, write a blog post about it or give a presentation. Mention it in the credits of your application, star it on GitHub, pose or answer questions about it on StackOverflow. In short: get it on the radar of as many people as possible. <strong>Give developers the possibility to choose.</strong>
 					</div>	
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<h1>Wear our merchandise</h1>
+						<h3>Wear our merchandise</h3>
 						
 						<p>
 						<img src="illustrations/merchandise.png"></img>

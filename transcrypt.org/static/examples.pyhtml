@@ -2,30 +2,10 @@ base_pyhtml = self.app.importFromFile ('base.pyhtml', 'base_pyhtml')
 base_pycss = self.app.importFromFile ('base.pycss', 'base_pycss')
 examples_pycss = self.app.importFromFile ('examples.pycss', 'examples_pycss')
 
-from base import Stripe
+from base import Stripe, listDemo, runDemo
+
 stripe = Stripe ()
 
-def runDemo (name):
-	return '''
-		<a class="run" href="live/transcrypt/demos/''' + name + '/' + name + '''.min.html" target="_blank">
-			Run the \'''' + name + '''\' example
-		</a>
-	'''
-
-editModes = {
-	'html': 'htmlmixed',
-	'py': 'python',
-	'js': 'javascript',
-	'css': 'css',
-	'manifest': 'htmlmixed'
-}
-	
-def listDemo (fileName):
-	return '''
-		Code in ''' + fileName + ''':
-		<textarea class="code ''' + editModes [fileName.split ('.')[-1]] + '" >' + self.app.readFromFile ('live/transcrypt/demos/' + fileName) + '''</textarea>
-	'''
-	
 self.content = '''
 	<html>
 		<head>
@@ -45,9 +25,9 @@ self.content = '''
 
 			<div class="moving">
 				<div class="examples">
-					<div class="section lane" id="jquery_demo" style="background-color:''' + stripe () + '''">
+					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="index" class="target"></div>	
-						<h1>Index</h1>
+						<h3>Index</h3>
 						
 						<ul>
 							<li><a href="#jquery_demo">jQuery</a>
@@ -63,7 +43,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="jquery_demo" class="target"></div>
-						<h1>jQuery</h1>
+						<h3>jQuery</h3>
 						
 						<p>
 						Despite competition, jQuery is still ubiquitous. Transcrypt and jQuery wear well together.
@@ -72,10 +52,10 @@ self.content = '''
 						''' + runDemo ('jquery_demo') + '''
 						
 						<p>
-						''' + listDemo ('jquery_demo/jquery_demo.html') + '''
+						''' + listDemo ('jquery_demo/jquery_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('jquery_demo/jquery_demo.py') + '''
+						''' + listDemo ('jquery_demo/jquery_demo.py',self.app) + '''
 						
 						<p>
 						<a href="#index">Back to index</a>
@@ -83,7 +63,7 @@ self.content = '''
 					
 					<!--div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="terminal" class="target"></div>					
-						<h1>Terminal</h1>
+						<h3>Terminal</h3>
 						
 						<p>
 						For someone learning the language, the event driven browser environment can be intimidating in itself. Transcrypt has simple facilities for blocking IO resembling a terminal or command line environment.
@@ -92,10 +72,10 @@ self.content = '''
 						''' + runDemo ('terminal_demo') + '''
 						
 						<p>
-						''' + listDemo ('terminal_demo/terminal_demo.html') + '''
+						''' + listDemo ('terminal_demo/terminal_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('terminal_demo/terminal_demo.py') + '''
+						''' + listDemo ('terminal_demo/terminal_demo.py', self.app) + '''
 
 						<p>
 						<a href="#index">,<- index</a>
@@ -103,7 +83,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="react_demo" class="target"></div>
-						<h1>React</h1>
+						<h3>React</h3>
 						
 						<p>
 						The React library makes it possible to create fast reacting interactive GUI's, by modifying a virtual DOM first and then adapting the real DOM in a minimal way. This example shows how it can be used in combination with Transcrypt.
@@ -112,10 +92,10 @@ self.content = '''
 						''' + runDemo ('react_demo') + '''
 						
 						<p>
-						''' + listDemo ('react_demo/react_demo.html') + '''
+						''' + listDemo ('react_demo/react_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('react_demo/react_demo.py') + '''
+						''' + listDemo ('react_demo/react_demo.py', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>
@@ -123,7 +103,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="pong_demo" class="target"></div>
-						<h1>Pong: Multiple classes and encapsulating Fabric.js</h1>
+						<h3>Pong: Multiple classes and encapsulating Fabric.js</h3>
 						
 						<p>
 						This example illustrates the clean application structure that can achieved by using class based object orientation in combination with encapsulating a JavaScript library as a Python module. Encapsulating JavaScript libraries is never necessary and in many cases it's overkill, all libraries can be used as-is. Moreover in this example the use of the voluminous Fabric.js library, encapsulated or not, is in itself overkill as well. The same functionality could have been achieved easily directly on top of the HTML5 canvas. But it serves to illustrate the principle.
@@ -135,10 +115,10 @@ self.content = '''
 						''' + runDemo ('pong') + '''
 						
 						<p>
-						''' + listDemo ('pong/pong.html') + '''
+						''' + listDemo ('pong/pong.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('pong/pong.py') + '''
+						''' + listDemo ('pong/pong.py', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>
@@ -146,7 +126,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="d3js_demo" class="target"></div>
-						<h1>D3.js</h1>
+						<h3>D3.js</h3>
 						
 						<p>
 						D3.js is a graphics library that offers data driven animation of the DOM. Using Python's 'classical' object orientation, D3.js programs are easy to comprehend and maintain.
@@ -155,10 +135,10 @@ self.content = '''
 						''' + runDemo ('d3js_demo') + '''
 						
 						<p>
-						''' + listDemo ('d3js_demo/d3js_demo.html') + '''
+						''' + listDemo ('d3js_demo/d3js_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('d3js_demo/d3js_demo.py') + '''
+						''' + listDemo ('d3js_demo/d3js_demo.py', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>
@@ -166,7 +146,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="ios_app" class="target"></div>
-						<h1>'Dice' iOS Web App</h1>
+						<h3>'Dice' iOS Web App</h3>
 						
 						<p>
 						Web Apps for iOS are full screen iOS browser applications that have a hidden address bar, while zooming and scrolling are blocked. By including a so called "cache manifest", they are cached on your iOS device, they don't need an internet connection to function. Also they can access the user's location. Starting them up happens by clicking a customized icon on your home screen. In other words: They behave like an app, but without the hassle. Rather than requiring admission to the app store, they can be downloaded from any site. With Transcrypt you just program them in Python. As an extra, they also feel at home in any browser, not just running under iOS.
@@ -181,13 +161,13 @@ self.content = '''
 						''' + runDemo ('ios_app') + '''
 						
 						<p>
-						''' + listDemo ('ios_app/ios_app.html') + '''
+						''' + listDemo ('ios_app/ios_app.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('ios_app/ios_app.py') + '''
+						''' + listDemo ('ios_app/ios_app.py', self.app) + '''
 						
 						<p>
-						''' + listDemo ('ios_app/cache.manifest') + '''
+						''' + listDemo ('ios_app/cache.manifest', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>
@@ -195,7 +175,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="riot_demo" class="target"></div>
-						<h1>Riot</h1>
+						<h3>Riot</h3>
 						
 						<p>
 						The Riot library also uses a virtual DOM, just like React. It works with custom tags that define structure, style and behaviour of reusable components.
@@ -204,16 +184,16 @@ self.content = '''
 						''' + runDemo ('riot_demo') + '''
 						
 						<p>
-						''' + listDemo ('riot_demo/riot_demo.html') + '''
+						''' + listDemo ('riot_demo/riot_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('riot_demo/color.py') + '''
+						''' + listDemo ('riot_demo/color.py', self.app) + '''
 						
 						<p>
-						''' + listDemo ('riot_demo/riot_tag.py') + '''
+						''' + listDemo ('riot_demo/riot_tag.py', self.app) + '''
 						
 						<p>
-						''' + listDemo ('riot_demo/riot_demo.py') + '''
+						''' + listDemo ('riot_demo/riot_demo.py', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>
@@ -221,7 +201,7 @@ self.content = '''
 					
 					<div class="section lane" style="background-color:''' + stripe () + '''">
 						<div id="plotly_demo" class="target"></div>
-						<h1>Plotly: live scientific plotting in the browser</h1>
+						<h3>Plotly: live scientific plotting in the browser</h3>
 						
 						<p>
 						The free version of the plotly.js library offers a rich set of scientific plots. As with any JavaScript library, Transcrypt is able to use plotly.js directly in the browser. There's no need to go through a special Python interface layer as would be the case when running plotly from a desktop Python installation. This means that the full native functionality of plotly.js is at your disposal, using plain Python syntax. For convenience, <i>__pragma__ ('jskeys')</i> can be used to void the need for quotes in dictionary keys.
@@ -236,10 +216,10 @@ self.content = '''
 						''' + runDemo ('plotly_demo') + '''
 						
 						<p>
-						''' + listDemo ('plotly_demo/plotly_demo.html') + '''
+						''' + listDemo ('plotly_demo/plotly_demo.html', self.app) + '''
 						
 						<p>
-						''' + listDemo ('plotly_demo/plotly_demo.py') + '''
+						''' + listDemo ('plotly_demo/plotly_demo.py', self.app) + '''
 
 						<p>
 						<a href="#index">Back to index</a>

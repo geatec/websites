@@ -1,0 +1,46 @@
+from base import *
+
+def getAll ():
+	return '''
+		.moving .sites {
+			font-family: arial;
+		}
+		
+		.moving .sites a {
+			display: block;
+			width: 500px;
+			max-width: 100%;
+			margin: 0 auto 0 auto;
+			box-shadow: 10px 10px 5px #888888;
+			text-decoration: none;
+		}
+
+		.moving .sites a img {
+			float: top;
+			width: 500px;
+			max-width:100%;
+			margin: 0;
+			border: 1px solid light-blue;
+		}
+		
+		.moving .sites a div {
+			float: top;
+			width: 500px;
+			max-width: 100%;
+			height: 100;
+			color: ''' + black + ''';
+			background-color: ''' + darkGray + ''';
+			word-wrap: break-word;
+		}	
+		
+		.moving .sites a div div {
+			position: relative;
+			top: 10%;
+			width: 90%;
+			height: 90%;
+			margin: auto;	
+		}
+	'''
+	return '''
+	'''
+	
