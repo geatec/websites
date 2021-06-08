@@ -14,8 +14,7 @@
 
 		ga('create', 'UA-86767356-1', 'auto');
 		ga('send', 'pageview');
-	</script>	
-	
+	</script>  
 </head>
 <body style="font-family:arial; font-size:15">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -104,5 +103,8 @@
 		});
 	</script>
 
-	<script src="__javascript__/turtle_site.js"></script>
+    <script type="module">
+        import * as turtle_site from './__target__/turtle_site.js'; window.turtle_site = turtle_site;
+        turtle_site.run ();
+    </script>
 <body>

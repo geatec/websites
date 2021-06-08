@@ -1,1 +1,0 @@
-CompletedProcess(args=['/home/sterlicht/.local/bin/transcrypt', '-h'], returncode=1)

@@ -24,16 +24,34 @@ self.content = '''
 			
 			<div class="moving">
 				<div class="sites">
-					<!-- div class="section lane" style="background-color:''' + stripe () + '''">
-						<a href="http://www.wiskundeles.com" target="_blank">
-							<img src="illustrations_gallery/wiskundeles.png" alt="wiskundeles">
-							<div><div>Math lessons for highschool children<br><br>http://www.wiskundeles.nl</div></div>
-						</a>		
-					</div -->
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<a href="http://ericbutlerlab.com/websoftware" target="_blank">
-							<img src="illustrations_gallery/butlerlab.png" alt="Ecology and evolution simualators">
-							<div><div>Ecology and evolution simulators, written in Transcrypt<br><br>http://ericbutlerlab.com/websoftware</div></div>
+						<a href="https://durrantlab.pitt.edu/deepfrag/" target="_blank">
+							<img src="illustrations_gallery/deepfrag.gif" alt="DeepFrag">
+							<div><div>Machine learning app for molecular chemistry and drug discovery<br><br>https://durrantlab.pitt.edu/deepfrag/</div></div>
+						</a>		
+					</div>
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="http://ericbutlerlab.com" target="_blank">
+							<img src="illustrations_gallery/butlerlab.png" alt="Ecology and evolution simulators">
+							<div><div>Ecology and evolution simulators, written in Transcrypt<br><br>http://ericbutlerlab.com</div></div>
+						</a>		
+					</div>
+					<!--div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="https://goldball.games" target="_blank">
+							<img src="illustrations_gallery/goldball.png" alt="Goldball 3D game">
+							<div><div>3D game, written in Transcrypt<br><br>https://goldball.games</div></div>
+						</a>		
+					</div-->
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="http://www.transcrypt.org/live/transcrypt/demos/pysteroids_demo/pysteroids.html" target="_blank">
+							<img src="illustrations_gallery/pysteroids.png" alt="Pysteroids shooting game">
+							<div><div>Shooting game, written in Transcrypt<br><br>http://www.transcrypt.org/live/transcrypt/demos/pysteroids_demo/pysteroids.html</div></div>
+						</a>		
+					</div>
+					<div class="section lane" style="background-color:''' + stripe () + '''">
+						<a href="https://vkrishna.itch.io/towerjumpers?password=pyweek28" target="_blank">
+							<img src="illustrations_gallery/towerjumpers.png" alt="Towerjumpers 2D game">
+							<div><div>2D game, written in Transcrypt<br><br>https://vkrishna.itch.io/towerjumpers?password=pyweek28</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
@@ -43,9 +61,9 @@ self.content = '''
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">
-						<a href="https://github.com/RunasSudo/Eos" target="_blank">
+						<a href="https://yingtongli.me/git/Eos/about/" target="_blank">
 							<img src="illustrations_gallery/eos.png" alt="Electronic voting system">
-							<div><div>Electronic voting system, portable between CPython and Transcrypt<br><br>https://github.com/RunasSudo/Eos</div></div>
+							<div><div>Electronic voting system, portable between CPython and Transcrypt<br><br>https://yingtongli.me/git/Eos/about/</div></div>
 						</a>		
 					</div>
 					<div class="section lane" style="background-color:''' + stripe () + '''">

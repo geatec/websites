@@ -70,7 +70,7 @@ def listDemo (fileName, app):
     
 def runDemo (name):
     return '''
-        <a class="run" href="live/transcrypt/demos/''' + name + '/' + name + '''.min.html" target="_blank">
+        <a class="run" href="live/transcrypt/demos/''' + name + '/' + name + '''.html" target="_blank">
             Run the \'''' + name + '''\' example
         </a>
     '''

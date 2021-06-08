@@ -1,0 +1,190 @@
+\documentclass{cursushandleiding}
+\usepackage{hyperref}
+%
+% Vul hier de cursusnaam in
+\cursusnaam{Programmeren 1: Imperatief Programmeren}
+%
+% Vul hier de cursuscode in
+\cursuscode{TINPRO02-1}
+%
+% Vul hier het aantal studiepunten in
+\studiepunten{2}
+%
+%
+% Deze tekst geeft een toelichting op het aantal studiepunten
+\studiebelasting{
+Dit studieonderdeel levert de student 2 ec op, hetgeen overeenkomt met een studielast van 56 uren waarvan 16 contacturen.
+De verdeling van deze 56 uren is als volgt:
+\begin{itemize}
+\item 7 $\times$ 2 uur gecombineerd hoor- en werkcollege: \hspace {3.0cm}14 uur.
+\item mondelinge toelichting inleveropdrachten \hspace {3.9cm} 2 uur.
+\item onbegeleid werken aan werkcollege en inleveropdrachten: \hspace {1.4cm}40 uur.
+\end{itemize}
+}
+%
+% Vul hier de voorkennis in
+\voorkennis{
+Geen.
+}
+%
+% Vul hier de gebruikte werkvormen in
+\werkvorm{Gecombineerd hoor- en werkcollege. Tijdens en buiten de contacturen wordt gewerkt aan werkcollege- en inleveropdrachten. \textbf {Aftekenen van de werkcollege-opdrachten is verplicht}.
+Tijdens de laatste les moeten studenten kort hun inleveropgaven mondeling toelichten.}
+%
+% Vul hier beknopte informatie over de toetsing in
+\toetsing{De toetsing bestaat uit een drietal verplichte inleveropgaven, die beoordeeld worden en samen het eindcijfer vormen.}
+%
+% Vul hier de gebruikte boeken en andere leermiddelen in
+\leermiddelen{Reader: \texttt{https://www.tutorialspoint.com/cprogramming}.
+Slides worden op Google Classroom geplaatst voor de start van de les.
+Studenten worden geacht in het bezit te zijn van een Arduino ontwikkelbordje.}
+%
+%
+%\begin{comment}
+\leerdoelen{De student:
+\begin{enumerate}
+%\color{blue}{
+	\item kan een ontwerp opstellen voor een programma.
+	\item kan een testplan opstellen en zinnige testdata formuleren.
+	\item kan programma's schrijven in de programmeertaal C.
+	\item begrijpt hoe variabelen, verschillende datatypen, en operators werken en kan deze implementeren in C.
+	%\item Wat is een header file? De rol van een header file, wat staat in een header file. Eerste stap om een header file te schrijven in C.
+	\item begrijpt de concepten van beslissing en herhaling en kan deze implementeren in C.
+	\item begrijpt de concepten van arrays, pointers, en strings en kan deze implementeren in C.
+	\item begrijpt de werking van functies en kan deze implementeren in C.
+	\item kan eenvoudige console- en file-input/output gebruiken.
+	%\item Preprocessors en Foutafhandeling.
+	%\item Dynamisch geheugenbeheer in C.
+	%}
+\end{enumerate}
+}
+%\end{comment}
+%
+% Vul hier een beknopte beschrijving van de inhoud in
+\inhoud{Tijdens deze cursus leren studenten imperatief programmeren in C om een probleem op te lossen.
+Het ontwerp van een programma wordt in detail behandeld om een complex probleem als een simpele grafische voorstelling weer te geven. Testen en test data worden besproken waarbij individuele eenheden/componenten van een programma getest kunnen worden (unit testing).
+Variabelen, verschillende datatypen, en operators worden behandeld. Vervolgens wordt de werking van beslissings- en herhalingsconstructies behandeld. Arrays, pointers, en strings worden doorgenomen. Functies, files, en I/O worden besproken.
+Deze kennis moet vervolgens toegepast worden in de opdrachten en werkcolleges.}
+%
+% Vul hier de naam van de cursusbeheerder in
+\cursusbeheerder{dr. ir. M. Hajian \& dr. W. M. Bergmann Tiest}
+%datum
+
+% Optioneel: Vul hier eventuele opmerkingen in
+\opmerkingen{De werkcollege, en opdrachten wordt individueel uitgevoerd.}
+% Hier begint de uitgebreide tekst van de cursushandleiding
+%
+\begin{document}
+%
+\section{Algemene omschrijving}
+%
+\subsection{Inleiding}
+%
+De programmeertaal C wordt veel gebruikt in embedded systemen waarbij performance belangrijk is. Omdat men deze programmeertaal dicht op de hardware zit, verschaft kennis van C inzicht in de werking van de computer. De programmeertaal C is de voorloper van moderne programmeertalen zoals Java en C++. Imperatief programmeren in C staat aan de basis van geavanceerdere programmeerparadigma's zoals object-ge"orienteerd programmeren.
+%het meest gebruikt bij het schrijven van besturingssystemen. Unix was de eerste die in C werd geschreven. Later volgden Microsoft Windows, Mac OS X en Linux. Besturingsystemen draaien direct op de hardware en hebben daardoor functies nodig die niet worden geleverd door andere programmeertalen zoals Java en Basic.
+%Met de begrijpen die in deze cursus worden behandeld kunnen studenten in vakken programmeren 2 en 3 object-georiënteerd programmeren leren. C++ is een variant van de programmeertaal C; de taal werd geïntroduceerd omdat C al een aantal jaren meeging en achterop raakte bij de mogelijkheden van modernere programmeertalen. Object-georiënteerd programmeren is een van de belangrijkste vernieuwingen in C++.
+%
+\subsection{Relatie met andere onderwijseenheden}
+%
+TINPRO02-1 bereidt studenten voor op de rest van de leerlijn programmeren, projecten 1 t/m 8, en de meeste andere TI-vakken, TINLAB, stage, en afstuderen.
+%
+\subsection{Leermiddelen}
+%
+Voor het uitvoeren van het werkcollege en de inleveropdrachten kan gebruik gemaakt worden van:
+\begin{itemize}
+\item de gcc compiler. gcc is een open source compiler-pakket dat vele talen ondersteunt, zoals C/C++, zie \url{https://gcc.gnu.org/}. Er kan gebruik gemaakt worden van een code editor als Visual Studio Code, zie \url{https://code.visualstudio.com}.
+\item Code::Blocks: Code::Blocks is een krachtige open source C, C++ en Fortran IDE. Het debuggen met behulp van Code::Blocks is zeer gebruiksvriendelijk. Fouten zoeken door gebruik te maken van break points is een zeer krachtig gereedschap van Code::Blocks.
+\item boek: \textit {The C programming Language} door Brian Kernighan en Dennis Ritchie. (Niet verplicht.)
+\end{itemize}
+
+Verder kan gebruik gemaakt worden van websites zoals: \url{https://www.tutorialspoint.com/cprogramming}.
+%
+\subsection{Aanwezigheid}
+%
+Aanwezigheid tijdens de lessen is verplicht vanwege het laten aftekenen van 
+werkcollege-opdrachten bij de docent. Er wordt een coulance-regeling gehanteerd waarbij maximaal 20\,\% van de lessen gemist mag worden, mits met goede redenen en van tevoren gemeld bij de docent. 
+%
+%
+%\begin{comment}
+\section{Programma}
+Tijdens deze cursus leren studenten imperatief programmeren in C om een probleem op te lossen.
+Het ontwerp van een programma wordt in detail behandeld om een complex probleem als een simpele grafische voorstelling weer te geven. Testen en test data worden besproken waarbij individuele eenheden/componenten van een programma getest kunnen worden (unit testing).
+Variabelen, verschillende datatypen, en operators worden behandeld. Vervolgens wordt de werking van beslissings- en herhalingsconstructies behandeld. Arrays, pointers, en strings worden doorgenomen. Functies, files, en I/O worden besproken.
+Deze kennis moet vervolgens toegepast worden in de opdrachten en werkcolleges.
+\newline\newline
+%
+\begin{tabular}{lp{10cm}}
+\hline
+\textbf{Week} & \textbf{Lesinhoud}\\
+\hline
+2 & Introductie: editor en compiler.\newline
+flowchart, variabelen, verschillende datatypen.\\
+%Opdracht 1.\\
+\hline
+3 & Operatoren\\
+\hline
+4 & Debugging, test plan en unit test, test data.\newline
+Inleveropdracht 1.\\
+%Opdracht 3.\\
+\hline
+5 & Beslissing:\newline
+if\dots else, if\dots elseif\dots else, switch\dots case.\\
+\hline
+6 & Herhaling:\newline
+for loop, while loop, do\dots while loop.\newline
+Inleveropdracht 2.\\
+%Opdracht 3.\\
+\hline
+7 & Functies.\newline
+Console- en file-input/output.\\
+\hline
+8 & Strings arrays, en pointers.\newline
+Inleveropdracht 3.\\
+\hline
+9 & Mondelinge toelichting van inleveropdrachten.\\
+\hline
+\end{tabular}
+%\end{comment}
+%================================================
+\section{Toetsing}
+\subsection{Procedure}
+De toetsing bestaat uit een drietal verplichte inleveropgaven, die beoordeeld worden en samen het eindcijfer vormen. Tevens moeten de werkcollegeopdrachten afgetekend zijn om in aanmerking voor een eindcijfer te komen. De werkcollegeopdrachten hebben echter geen effect op de hoogte van het eindcijfer. Werkcollege-opdrachten moeten uitgevoerd worden tijdens de betreffende les.
+
+De inleveropdrachten moeten vergezeld worden van een ontwerp (bijv.\ flowchart) en een kort testplan en testrapport. Tevens moet de code voorzien zijn van informatief commentaar.
+
+\textbf{Deadline}: de inleveropdrachten moeten \'e\'en week na het verstrekken van de opdracht, uiterlijk om 17:00 uur ingeleverd worden.
+
+\textbf{Mondelinge toelichting}: de ingeleverde opdrachten moeten tijdens de laatste les mondeling toegelicht worden, waarbij de student vragen over de werking van zijn/haar code moet beantwoorden. Deze antwoorden wegen mee in de beoordeling.
+
+\textbf{Beoordeling:} Voor ieder van de drie inleveropdrachten geldt de volgende beoordeling:
+
+\begin{tabular}{p{10cm}l}
+\hline
+De opdracht voldoet niet aan de gestelde eisen & 0 pnt.\\
+Het ontwerp en testplan zijn in orde & 1 pnt.\\
+De opdracht voldoet aan de gestelde eisen & 1 pnt.\\
+De opdracht voldoet aan de gestelde eisen en bevat extra functionaliteit zoals aangegeven in de opdrachtomschrijving & 1 pnt.\\
+\hline
+\end{tabular}
+
+E\'en extra punt kan toegekend worden indien de drie inleveropdrachten consistent een grote technische complexiteit of een zeer elegante oplossing laten zien.
+
+De punten voor de drie inleveropdrachten en het eventuele bonuspunt worden bij elkaar opgeteld en vormen het eindcijfer voor de cursus. De voorwaarde voor verkrijgen van een eindcijfer is dat voor alle drie de opdrachten minstens twee punten behaald zijn en het werkcollege afgetekend is.
+%
+\subsection{Herkansing}
+%
+De herkansing bestaat uit het opnieuw inleveren van de inleveropdrachten in week 6 van OP2.
+
+Hogerejaars studenten die het vak nog moeten herkansen kunnen naar keuze de opdrachten inleveren of deelnemen aan een schriftelijke toets over de inhoud van het vak van vorig jaar. Meld je hiervoor bij de cursusbeheerder.
+%
+\section*{Bijlage: Toetsmatrijs}
+%
+De opdrachten zijn gekoppeld aan de leerdoelen volgens onderstaande matrix:
+%
+\begin{itemize}
+\item Opdracht 1 $\Rightarrow$ Leerdoel 1, 2, 3, 4.
+\item Opdracht 2 $\Rightarrow$ Leerdoelen 1, 2, 3, 4, 5.
+\item Opdracht 3 $\Rightarrow$ Alle leerdoelen.
+\end{itemize}
+%
+\end{document}

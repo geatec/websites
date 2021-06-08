@@ -29,11 +29,11 @@ self.content = '''
 						<h3>Read what you need</h3>
 
 						<p>
-						<h4><a class='mixed-link' href="docs/html/index.html" target="_blank"><img src="illustrations/monk_transcribing.png"></img>Transcrypt 3.6 Documentation</a></h4>
+						<h4><a class='mixed-link' href="docs/html/index.html" target="_blank"><img src="illustrations/monk_transcribing.png"></img>Transcrypt 3.9 Documentation</a></h4>
 						Focus is on the features that are unique for Transcrypt, rather than the general features of Python. You'll find command line options, pragmas (local compiler options) and systematic code examples demonstrating all supported features. In addition you'll find examples showing how to combine Transcrypt with html and with a number of popular JavaScript libraries and platforms. Although the demo's on this site will get you started, if you plan to use Transcrypt for production, spending some time with the documentation is likely to pay off.
 						
 						<p>
-						<h4><a class="mixed-link" href="#faq"><img src="illustrations/logo_questionmark.png"></img>Trancrypt 3.6 FAQ</a></h4> Answers to some frequenly asked questions about Transcrypt.
+						<h4><a class="mixed-link" href="#faq"><img src="illustrations/logo_questionmark.png"></img>Trancrypt 3.9 FAQ</a></h4> Answers to some frequenly asked questions about Transcrypt.
 						
 						<p>
 						<h4><a class="mixed-link" href="#media"><img src="illustrations/logo_megaphone.png"></img>Media & presentations about Transcrypt in general</a></h4> Articles, mentions, talks.
@@ -43,7 +43,7 @@ self.content = '''
 						StackOverflow is a handy medium to pose questions about Transcrypt. By using StackOverflow, the answer to your question can help others as well.<br>
 						
 						<p>
-						<h4><a class="mixed-link" href="https://docs.python.org/3.6/" target="_blank"><img src="illustrations/logo_python.png"></img>Python 3.6 Documentation</a></h4> A good background reference, since Transcrypt covers most of the Python 3.6 language core and has exactly same syntax. However note that Transcrypt mostly uses JavaScript libraries rather than Python ones.
+						<h4><a class="mixed-link" href="https://docs.python.org/3.9/" target="_blank"><img src="illustrations/logo_python.png"></img>Python 3.9 Documentation</a></h4> A good background reference, since Transcrypt covers most of the Python 3.9 language core and has exactly same syntax. However note that Transcrypt mostly uses JavaScript libraries rather than Python ones.
 						
 						<p>
 						<h4><a class='mixed-link' href="numscrypt/docs/html/index.html" target="_blank"><img src="numscrypt/illustrations/abacus_square.png"></img>Numscrypt Documentation</a></h4>
@@ -59,13 +59,8 @@ self.content = '''
 						<div id="accordion">
 							<h3>What overhead can I expect when using Transcrypt rather than JavaScript?</h3>
 							<div>
-								The minified JavaScript code for each of your own modules is roughly just as large as the Python source code. On top of that there's a one time overhead of 20kB for Transcrypt's core and built-ins. Should you use the JavaScript 5 to 6 translator, that adds an extra 10kB. For larger projects, the overhead becomes negligeable. A project with a Python source of say 600kB tends to result in a dowload of about equal size. Moreover Python sourcecode for a certain application tends to be smaller than handwritten JavaScript source code for the same problem, due to language constructs like list comprehensions, but also due to facilities like class based OO and multiple inheritance.<br><br>
+								The minified JavaScript code for each of your own modules is roughly just as large as the Python source code. On top of that there's a one time overhead of 40kB for Transcrypt's core and built-ins. For larger projects, the overhead becomes negligeable. A project with a Python source of say 600kB tends to result in a dowload of about equal size. Moreover Python sourcecode for a certain application tends to be smaller than handwritten JavaScript source code for the same problem, due to language constructs like list comprehensions, but also due to facilities like class based OO and multiple inheritance.<br><br>
 								As far as speed is concerned, in most cases it is roughly equal to the speed of hand-written JavaScript. There's quite some optimization going on. A construct like <i>i=i-1</i> will e.g. compile into <i>i--</i>. With the call caching switch on, speed will surpass the speed of straightforward hand-written JavaScript function calls. As JavaScript gradually moves to support of a richer set of data structures on the majority of browsers, Transcrypt will benefit from that by moving from emulation to directly using JavaScript equivalents. This doesn't require any changes in your source code.
-							</div>
-							
-							<h3>Transcrypt claims to support JavaScript 6. Without minification it indeed outputs JavaScript 6, but when I use the minifier, what I get is JavaScript 5.</h3>
-							<div>
-								While Transcrypt itself generates JavaScript 6 when using the <i>-e&nbsp6</i> switch, the Google Closure compiler that does the minification, currently translates it back to JavaScript 5, since that is what's supported on most browsers. As soon as this changes, minificated output will be JavaScript 6 as well. In the mean time, if you're programming only for browsers that already support JavaScript 6, e.g. on an intranet, you can use any suitable 3rd party minifier directly on the generated non-minified JavaScript.
 							</div>
 							
 							<h3>I am used to interspersing all kinds of JavaScript fragments in my page. With Transcrypt what I get is a single application with possibly different entrypoints. Why is that?</h3>
@@ -114,7 +109,7 @@ self.content = '''
 							
 							<h3>I am using React.js. Can I embed JSX source code in my Python files?</h3>
 							<div>
-								Yes, you can. By using the xtrans pragma you can pipe embedded code to any external translator. The result will be inserted in the generated JavaScript. Using an external JSX translator is just one possibility.
+								Yes, you can. By using the xtrans pragma you can pipe embedded code to any external translator. The result will be inserted in the generated JavaScript. Using an external JSX translator is just one possibility. A thorough explanation of developing React applications in Transcrypt with lots of sample code is given in John Sheehan's book <a href="https://www.jennasys.com/rtp" target="_blank">React to Python</a>.
 							</div>
                             
 							<h3>How can I use static typing?</h3>
@@ -156,20 +151,44 @@ self.content = '''
 						<h3>Media & presentations about Transcrypt in general</h3>
 						
 						<ul>
+                        	<li><a href="https://www.safaribooksonline.com/library/view/python-in-a/9781491913833/ch01.html#idm139800537970608" target="_blank">Python in a Nutshell, 3rd edition.</a> Book by Steve Holden, Anna Ravenscroft and Alex Martelli.
+
+                        	<li><a href="https://www.jennasys.com/rtp" target="_blank">React to Python, 1st edition.</a> Book by John Sheehan.
+
 							<li><a href="https://www.infoq.com/articles/transcrypt-python-javascript-compiler" target="_blank">Transcrypt: Anatomy of a Python to JavaScript Compiler.</a> Background article in InfoQ by Jacques de Hooge.
+                            
 							<li><a href="http://stackoverflow.com/questions/30155551/python-in-browser-how-to-choose-between-brython-pypy-js-skulpt-and-transcrypt#answer-38564424" target="_blank">Detailed personal experiences with Transcrypt and other browser Pythons.</a> Anwser to a popular question on StackOverflow by FzzyLogic.
+                            
                             <li><a href="https://wiki.python.org/moin/WebBrowserProgramming" target="_blank">Web browser programming in Python.</a> Python Wiki.
+                            
                             <li><a href="http://stromberg.dnsalias.org/~strombrg/pybrowser/python-browser.html" target="_blank">Feature comparison matrix of 24 browser Pythons.</a> Site maintained by Dan Stromberg.
+                            
 							<li><a href="http://alternativeto.net/software/transcrypt" target="_blank">Relative perception of Transcrypt with respect to other browser programming tools.</a> Comparative poll.
+                            
 							<li><a href="https://pythonpodcast.com/jacques-de-hooge-transcrypt.html" target="_blank">Transcrypt and the design choices underlying it.</a> Interview on PythonPodcast.com with Jacques de Hooge, initiator of the Transcrypt open source project.
-							<li><a href="https://axiros.github.io/transcrypt/#" target="_blank">Reactive, isomorphic web components with unambiguous state on client and server, using Transcrypt.</a> Talk by Gunter Klessinger, founder and managing director technology innovation at <a href="http://www.axiros.com" target="_blank">Axiros</a>, held at PYCON.DE 2016.
+                            
+							<li><a href="https://blog.cloudflare.com/cloudflare-workers-announces-broad-language-support/" target="_blank">Cloudflare Workers Announces Broad Language Support.</a> Blog item by Cody Koeninger about Cloudflare Workers using Transcrypt to support front-end programming in Python.
+                            
+							<li><a href="https://axiros.github.io/transcrypt/#" target="_blank">Reactive, isomorphic web components with unambiguous state on client and server, using Transcrypt.</a> Talk by Gunter Klessinger, founder and managing director technology innovation at <a href="http://www.axiros.com" target="_blank">Axiros</a>, held at PyCon.DE 2016.
+                            
+							<li><a href="https://www.youtube.com/embed/RUfKgdfn6pI?autoplay=1" target="_blank">Big forms with JSON schemas and Transcrypt.</a> Talk by Philippe Entzmann, AON France, held at PyParis 2018.
+                            
+							<li><a href="https://www.youtube.com/embed/gL4df19JNPU?autoplay=1" target="_blank">Python & Javascript = Transcrypt.</a> Talk by Andreas Bunkahle, held at PyCon.DE 2018.
+                            
+							<li><a href="https://www.youtube.com/embed/zGqUysiC1xA?autoplay=1" target="_blank">Python as altJS: Let's write the front-end in Python.</a> Talk in Japanese by Junya Haseba, held at PyCon.JP 2018.
+                            
 							<li><a href="http://www.infoworld.com/article/3033047/javascript/4-tools-to-convert-python-to-javascript-and-back-again.html" target="_blank">4 tools to convert Python to JavaScript (and back again).</a> Article by Serdar Yegulalp in InfoWorld.
+                            
 							<li><a href="http://www.linuxjournaldigital.com/linuxjournal/may_2017?pg=84#pg84" target="_blank">3D Imaging of Heart Activity with Open Source Software.</a> Article by Jacques de Hooge in Linux Journal about one of the projects that contributed to the motivation for writing an efficient open source Python to JavaScript compiler. The original idea for Transcrypt came from another project involving visual communication for aphasia patients.
-							<li><a href="http://sdtimes.com/postgresql-security-update-release-transcrypt-python-3-5-to-javascript-transpiler-and-new-intellij-idea-16-eap-build-released-sd-times-digest-feb-12-2016" target="_blank">Transcrypt Python 3.5 to JavaScript transpiler.</a> Announcement by Christina Cardoza and Madison Moore in SDTimes.
-							<!--li><a href="https://www.techtalkauthority.tk/postview/use-python-develop-client-side-applications.html" target="_blank">Use Python to develop client-side applications.</a> TechTalk by Maharshi Mukerjee.</li-->
-							<li><a href="https://medium.com/@martim00/making-a-webpack-python-loader-87215d72292e" target="_blank">Making a Webpack Python loader.</a> Article by Martim Nascimento on medium.com.                         
-							<li><a href="https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js" target="_blank">List of tools that compile to JavaScript.</a> Survey on CoffeeScript GitHub site.
-							<li><a href="https://www.safaribooksonline.com/library/view/python-in-a/9781491913833/ch01.html#idm139800537970608" target="_blank">Python in a Nutshell, 3rd edition.</a> Book by Steve Holden, Anna Ravenscroft and Alex Martelli.
+
+							<li><a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.1c00103#" target="_blank">DeepFrag: An Open-Source Browser App for Deep-Learning Lead Optimization.</a> Article by Harrison Green and Jacob D. Durrant in Journal of Chemical Information and Modeling about a machine learning app for molecular chemistry and drug discovery. Transcrypt is used to turn the original desktop app into a browser app open for all researchers.
+
+							<li><a href="
+                            http://sdtimes.com/postgresql-security-update-release-transcrypt-python-3-5-to-javascript-transpiler-and-new-intellij-idea-16-eap-build-released-sd-times-digest-feb-12-2016" target="_blank">Transcrypt Python 3.5 to JavaScript transpiler.</a> Announcement by Christina Cardoza and Madison Moore in SDTimes.
+                            
+							<li><a href="https://medium.com/@martim00/making-a-webpack-python-loader-87215d72292e" target="_blank">Making a Webpack Python loader.</a> Article by Martim Nascimento on medium.com.     
+                            
+							<li><a href="https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js" target="_blank">List of tools that compile to JavaScript.</a> Survey on CoffeeScript GitHub site.                            
 						</ul>
 					</div>
 				</div>

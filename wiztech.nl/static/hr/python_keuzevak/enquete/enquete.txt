@@ -1,0 +1,41 @@
+Studiejaar 20/21, OP4, kennismakings-enquete, inleveren verplicht
+=================================================================
+
+Doel is om inzicht te krijgen in jouw voorkennis,
+zodat daarmee in de les rekening kan worden gehouden.
+
+
+
+1. Naam:
+
+
+
+2. Student-nummer:
+
+
+
+3. Studie-richting:
+
+
+
+4. Studie-jaar:
+
+
+
+5. Op welk niveau wil je beoordeeld worden (zie cursus-handleiding, aanpassing achteraf in overleg mogelijk)
+a. Ik heb serieuze belangstelling voor programmeren maar (vrijwel) geen ervaring
+b. Ik heb minimaal 1 jaar ervaring met C, C++, Java of Python of gelijkwaardig
+c. Ik heb tenminste 3 jaar ervaring met C, C++, Java of Python of gelijkwaardig
+Keuze:
+
+
+
+Het is de bedoeling dat je voorafgaand aan de les de bijbehorende video-les bestudeert  (zie cursus-handleiding)
+a. Ik heb de video van les 1 volledig bestudeerd
+b. Ik moet de video van les 1 nog bestuderen (opmerking: doe dit alsnog!)
+Keuze:
+
+
+
+Veel plezier bij keuzevak Python!
+

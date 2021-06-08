@@ -29,7 +29,7 @@ self.content = '''
 				<div class="section splash">
 					<div class="announcement-bar">
 						<div class="text lane">
-                            Latest stable release: 3.6.88 'Paris' - monthly downloads: 13,286
+                            Latest stable release: 3.9.0 'Berlin' - <b>New hands-on book: <a href="https://pyreact.com" target="_blank">React to Python</a>, how to write React applications in Transcrypt</b> 
 						</div>
 					</div>
 					
@@ -85,12 +85,19 @@ self.content = '''
                     <h3>Get started: Hello, solar system...</h3>
                     
                     <ol>
-                    <li>Download Python 3.6 from <a href="https://www.python.org/downloads" target="_blank">www.python.org</a>.
-                    <li>Install Transcrypt: <i>python -m pip install transcrypt</i>.
-                    <li>Create a folder <i>hello</i> containing <i>hello.html</i> and <i>hello.py</i>
-                    <li>In folder <i>hello</i> type <i>transcrypt -b -m -n hello.py</i>
-                    <li>Open <i>hello.html</i> in your browser to see the result
+                    <li>Download Python 3.9 from <a href="https://www.python.org/downloads" target="_blank">www.python.org</a>
+                    <li>Install Transcrypt from the command prompt by typing <i>python -m pip install transcrypt</i>
+                    <li>Create a new folder <i>hello</i> containing <i>hello.html</i> and <i>hello.py</i>
+                    <li>Go to that new folder and type <i>python -m transcrypt -b -m -n hello.py</i>
+                    <li>In that same new folder start an HTTP server by typing <i>python -m http.server</i>
+                    <li>In your browser, navigate to  <i>localhost:8000/hello.html</i> to see the result
                     </ol>
+                    
+                    <ul>
+                    <li>On Windows systems you may have to type <i>python39</i> or <i>python3</i> rather than <i>python</i>
+                    <li>On Linux and MacOS systems you may have to type <i>python3.9</i> or <i>python3</i> rather than <i>python</i>
+                    <li>On some systems you can just type <i>transcrypt -b -m -n hello.py</i> to compile the test program
+                    </ul>
                     
                     <p>
                     ''' + runDemo ('hello') + '''
@@ -121,7 +128,7 @@ self.content = '''
 					Transcrypt features <u>multi-level sourcemaps</u>, so you can debug your application comfortably, working from the Python source code in your browser, even if the generated JavaScript is minified. It also has a unique autotest feature that makes back to back regression testing with CPython a snap.
 
 					<p>
-					Transcrypt comes with 3rd party tools for <u>optional static type validation</u>, lightweight consistency checks and minification, all at the tip of a command line switch. It can generate code for JavaScript 5 and 6. All tools are fully integrated in the distribution, one single pip install will put them at your disposal.
+					Transcrypt comes with 3rd party tools for <u>optional static type validation</u>, lightweight consistency checks and minification, all at the tip of a command line switch. It generates code for JavaScript 6. All tools are fully integrated in the distribution, one single pip install will put them at your disposal.
 				</div>
 				
 				<div class="section correspondence" style="background-color:''' + stripe () + '''">

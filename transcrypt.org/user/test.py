@@ -1,3 +1,3 @@
-f = open ('testoutput.txt', 'w')
-f.write ('This is a test \n')
-f.close ()
+with open ('testoutput.txt', 'w') as testFile:
+    testFile.write ('This is a test\n')
+    

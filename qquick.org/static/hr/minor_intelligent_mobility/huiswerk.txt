@@ -1,0 +1,7 @@
+Huiswerk voor 19 september:
+
+- Programmeer met behulp van de while en if-else-elif statement twee stoplichten, waarvan de ene steeds wisselt: rood->groen->geel->rood etc. en de andere ondertussen knippert in een heel ander ritme. Daarvoor heb je een FSM (Finite State Machine) nodig. (Google).
+
+- Voor mensen voor wie dit al gesneden koek is: Maak het eerdere programma, dat werkt met accelleration, velocity en position multithreading. Een thread is de eindeloze lus uit de vorige versie. De andere thread geeft de gebruiker de gelegenheid onderwijl een gewijzigde accelleration in te voeren met de input statement.
+
+- Voor ver gevorderden: Maak ook een aparte visualisatie thread, die iets real time laat bewegen met de juiste accelleration, velocity en position.

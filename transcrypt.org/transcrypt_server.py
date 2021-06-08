@@ -26,7 +26,7 @@ class ExamplePage (Page):
             'mondrian'
         ]:
             with open ('{}/{}.py'.format (examplesDirName, fileNameHead)) as sourceFile:
-                with open ('{}/__javascript__/{}.mod.js'.format (examplesDirName, fileNameHead)) as targetFile:
+                with open ('{}/__target__/{}.js'.format (examplesDirName, fileNameHead)) as targetFile:
                     self.content = [json.dumps ([sourceFile.read (), targetFile.read ()])]
                     
 class CompilePage (Page):
@@ -37,8 +37,8 @@ class CompilePage (Page):
             timeString = str (time.time ()) .replace ('.', '_')
             filePrename = 'turtle_code_{}'.format (timeString)
             sourcePath = '{}.py'.format (filePrename)
-            targetPath = '__javascript__/{}.mod.js'.format (filePrename)
-            byproductPath = '__javascript__/{}.js'.format (filePrename)
+            targetPath = '__target__/{}.js'.format (filePrename)
+            byproductPath = '__target__/{}.js'.format (filePrename)
             
             origDirName = os.getcwd ()
             sourceDir = self.app.siteDirName + '/user'
@@ -48,7 +48,8 @@ class CompilePage (Page):
                 sourceFile.write (json.loads (self.json))
 
             try:
-                result = str (subprocess.run (['/home/sterlicht/.local/bin/transcrypt', '-b', '-n', '-xc', sourcePath], env = os.environ, cwd = sourceDir))
+                result = str (subprocess.run (['{}/test.py'.format (sourceDir)], env = os.environ, cwd = sourceDir))
+                # result = str (subprocess.run (['/home/sterlicht/.local/bin/transcrypt', '-b', '-n', '-dl', filePrename], env = os.environ, cwd = sourceDir))
             except Exception as exception:
                 result = str (exception)
                 
@@ -56,13 +57,13 @@ class CompilePage (Page):
             resultFile.write ('{}\n'.format (result))
             resultFile.close ()
                 
-            os.remove (sourcePath)
-            os.remove (byproductPath)
+            # os.remove (sourcePath)
+            # os.remove (byproductPath)
             
             with open (targetPath) as targetFile:
                 self.content = [json.dumps (targetFile.read ())]
                 
-            os.remove (targetPath)
+            # os.remove (targetPath)
  
             os.chdir (origDirName)   
                             

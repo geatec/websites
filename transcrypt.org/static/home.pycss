@@ -32,7 +32,7 @@ def getAll ():
 			background-size: cover;
 			background-position: center;
 			background-image:
-			url("illustrations/paris_panorama.jpg");
+			url("illustrations/berlin_panorama.jpg");
 		}
 		
 		.moving .panorama .slogan {
@@ -74,6 +74,12 @@ def getAll ():
 		}
         
         .moving .hello ol {
+            display: block;
+            padding: 3% 3% 2% 8%;
+            background-color: ''' + veryTransparentLogoGreen + ''';
+        }
+		
+        .moving .hello ul {
             display: block;
             padding: 3% 3% 2% 8%;
             background-color: ''' + veryTransparentLogoGreen + ''';

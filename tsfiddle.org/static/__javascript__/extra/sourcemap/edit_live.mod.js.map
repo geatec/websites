@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "D:/activ_tosh/web/sites/transcrypt_new.org/static/__javascript__/edit_live.mod.js",
+	"sources": [
+		"D:/activ_tosh/web/sites/transcrypt_new.org/static/edit_live.py"
+	],
+	"sourcesContent": [
+		"__pragma__ ('alias', 'jq', '$')\n\n# For use by eval'ed turtle applet\nimport turtle\nimport random\nimport math\n\ndef clear ():\n\teditor.setValue ('')\n\tturtle.reset ()\n\trun ()\n\t\ndef run ():\n\tdef success (result):\n\t\tturtle.reset ()\n\t\teval (result)\n\t\n\tdef fail (a, b, c):\n\t\tprint ('Run error:', a, b, c)\n\n\t# N.B. The request has to be explicitly encoded, but the response is already implicitly decoded\n\tjq.ajax ({\n\t\t'url':'http://www.transcrypt.org/compile',\n\t\t'type': 'POST',\n\t\t'data': JSON.stringify (editor.getValue ()),\n\t\t'dataType': 'json',\n\t\t'contentType': 'application/json',\n\t\t'success': success,\n\t\t'fail': fail\n\t})\n\t\ndef mail ():\n\twindow.location.href = '''\n\t\tmailto:{}\n\t\t?body={}\n\t\t&subject=Turtle graphics from www.transcrypt.org\n\t'''.format (\n\t\tescape (document.getElementById ('mail_address') .value),\n\t\teditor.getValue () .replace ('\\n', '%0D%0A') .replace ('\\t', '    ')\n\t)\n\t\ndef selectExample ():\n\tdef success (result):\n\t\teditor.setValue (result [0])\n\t\tturtle.reset ()\t\t# Using old paths\n\t\twindow.terminate = True\n\t\teval (result [1])\t# Using new paths (so cannot clear old result)\n\t\t\n\tdef fail (a, b, c):\n\t\tprint ('Select example error:', a, b, c)\n\t\t\n\tselector = document.getElementById ('select_example')\n\t\n\tjq.ajax ({\n\t\t'url':'http://www.transcrypt.org/example',\n\t\t'type': 'POST',\n\t\t'data': JSON.stringify (selector.options [selector.selectedIndex] .value),\n\t\t'dataType': 'json',\n\t\t'contentType': 'application/json',\n\t\t'success': success,\n\t\t'fail': fail\n\t})\n\n\n\t"
+	],
+	"mappings": "AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAwDA;AAAA;AAAA;AArDA;AACA;AACA;AAEA;AACA;AACA;AACA;AAAA;AAEA;AACA;AACA;AACA;AAAA;AAEA;AACA;AAAA;AAMA;AAAA;AAOA;AAOA;AAAA;AAGA;AACA;AACA;AACA;AACA;AACA;AAAA;AAEA;AACA;AAAA;AAEA;AAKA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA"
+}

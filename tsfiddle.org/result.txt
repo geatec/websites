@@ -1,0 +1,1 @@
+CompletedProcess(args=['/home/sterlicht/.local/bin/transcrypt', '-b', '-n', '-xc', 'turtle_code_1537024701_1200504.py'], returncode=0)
