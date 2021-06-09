@@ -34,13 +34,7 @@
 			width: 37%;
 			font-size:12;
 		}
-		#__terminal__ {
-			background-color: black;
-			color: white;
-			font-family: arial;
-			font-size: 14px;
-		}
-	</style>
+    </style>
 
 	<textarea id="code">
 	</textarea>
@@ -80,8 +74,8 @@
     <div id="banner" style="position:absolute; left:45%; top:1%; height:10%; font-size:12;">Powered by the <a href="http://www.transcrypt.org"><b><i>Transcrypt</i></b></a> Python to Javascript compiler: <b><i>lean, fast, open!</i></b>
     </div>
     
-	<div id="__terminal__" style="position:absolute; top:82%; left:45%; height:15%; width:49%">
-	</div>
+    <iframe id="output" style="position:absolute; top:5%; left:45%; height:95%; width:49%">`
+    </iframe>
 
 	<script id="source_code">
 		var editor = CodeMirror.fromTextArea (document.getElementById ("code"), {
