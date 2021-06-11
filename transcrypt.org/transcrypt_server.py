@@ -35,10 +35,9 @@ class CompilePage (Page):
         
         if len (self.json) < maxChars:
             timeString = str (time.time ()) .replace ('.', '_')
-            filePrename = 'turtle_code_{}'.format (timeString)
-            sourcePath = '{}.py'.format (filePrename)
-            targetPath = '__target__/{}.js'.format (filePrename)
-            byproductPath = '__target__/{}.js'.format (filePrename)
+            filePrename = f'turtle_code_{timeString}'
+            sourcePath = f'{filePrename}.py'
+            targetPath = f'__target__/{filePrename}.js'
             
             origDirName = os.getcwd ()
             sourceDir = self.app.siteDirName + '/user'
@@ -48,17 +47,16 @@ class CompilePage (Page):
                 sourceFile.write (json.loads (self.json))
 
             try:
-                result = str (subprocess.run (['{}/test.py'.format (sourceDir)], env = os.environ, cwd = sourceDir))
-                # result = str (subprocess.run (['/home/sterlicht/.local/bin/transcrypt', '-b', '-n', '-dl', filePrename], env = os.environ, cwd = sourceDir))
+                # result = str (subprocess.run (['{}/test.py'.format (sourceDir)], env = os.environ, cwd = sourceDir))
+                result = str (subprocess.run (['/home/sterlicht/.local/bin/transcrypt', '-b', '-n', '-dl', sourcePath], capture_output = True, env = os.environ, cwd = sourceDir))
             except Exception as exception:
                 result = str (exception)
                 
-            resultFile = open ('result.txt', 'w')
-            resultFile.write ('{}\n'.format (result))
+            resultFile = open (targetPath, 'w')
+            resultFile.write (f'{result}\n')
             resultFile.close ()
                 
             # os.remove (sourcePath)
-            # os.remove (byproductPath)
             
             with open (targetPath) as targetFile:
                 self.content = [json.dumps (targetFile.read ())]

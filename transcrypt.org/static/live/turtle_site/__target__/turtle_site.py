@@ -1,12 +1,6 @@
 __pragma__ ('alias', 'jq', '$')
 __pragma__ ('noalias', 'clear')
 
-'''
-async def awaitImport (selectorValue):
-    strippedSelectorValue = selectorValue [1:-1]
-    __pragma__ ('js', '{}', 'await import ("http://www.transcrypt.org/live/transcrypt/demos/turtle_demos/__target__/" + strippedSelectorValue + ".js")')
-'''
-
 def clear ():
     editor.setValue ('')
     
@@ -15,6 +9,7 @@ def clear ():
     
 def run ():
     def success (result):
+        print (result)
         pass
         # global random
     
@@ -27,7 +22,6 @@ def run ():
     def fail (a, b, c):
         print ('Run error:', a, b, c)
 
-    '''
     # N.B. The request has to be explicitly encoded, but the response is already implicitly decoded
     jq.ajax ({
         'url':'http://www.transcrypt.org/compile',
@@ -38,7 +32,6 @@ def run ():
         'success': success,
         'fail': fail
     })
-    '''
     
 def mail ():
     def success (result):
@@ -67,7 +60,7 @@ def selectExample ():
         style = '''
             <style>
                 #__terminal__ {
-                    background-color: black;
+                    background-color: darkblue;
                     color: white;
                     font-family: arial;
                     font-size: 14px;
@@ -83,13 +76,13 @@ def selectExample ():
                     {style}
                 </head>
                 <body>      
-                    <div id="__terminal__" style="position:absolute; top:80%; left:0%; height:15%; width:100%">
+                    <div id="__turtlegraph__" style="position:absolute; height:80%; width:98%;">
+                    </div>
+                    <div id="__terminal__" style="position:absolute; top:80%; height:19%; width:98%;">
                     </div>
                 </body>
             </html>
         '''
-
-        console.log (outputHtml)
 
         __pragma__ ('js', '{}', "var outputBlob = new Blob ([outputHtml], {type: 'text/html'})")
         outputUrl = URL.createObjectURL (outputBlob)

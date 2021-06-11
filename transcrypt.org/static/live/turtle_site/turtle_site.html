@@ -1,10 +1,45 @@
 <head>
 	<meta name="robots" content="index, follow">					
-
-	<title>Live on-line SVG turtle graphics in Python 3.5</title>
 	<meta name="description" lang="en" xml:lang="en" content="Live on-line SVG turtle graphics in Python 3.5">
 	<meta name="keywords" lang="en" xml:lang="en" content="turtle graphics python 3.5 on-line SVG">
-	
+
+	<title>Live on-line SVG turtle graphics in Python 3.5</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="codemirror/lib/codemirror.js"></script>
+	<script src="codemirror/addon/edit/matchbrackets.js"></script>
+	<script src="codemirror/mode/python/python.js"></script>
+
+	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+
+	<style type="text/css">
+		.CodeMirror {
+			border: 1px solid black;
+			padding: 7px;
+			position: absolute;
+			height: 78%;
+			width: 96%;
+			font-size:12;
+		}
+
+        body {
+            font-family:arial;
+            font-size:15;
+        }
+
+        .block {
+            position: absolute;
+            box-sizing: border-box;
+            top: 2%;
+            height: 96%;
+            left: 0%;
+            width:  96%;
+            margin: 0%;
+            padding: 0%;
+            border: 0%;
+        }
+    </style>    
+
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;
@@ -16,67 +51,51 @@
 		ga('send', 'pageview');
 	</script>  
 </head>
-<body style="font-family:arial; font-size:15">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<body>
+    <div id="left_pane" class="block" style="width:37%;">
+        <textarea id="code">
+        </textarea>
 
-	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
-
-	<script src="codemirror/lib/codemirror.js"></script>
-	<script src="codemirror/addon/edit/matchbrackets.js"></script>
-	<script src="codemirror/mode/python/python.js"></script>
-
-	<style type="text/css">
-		.CodeMirror {
-			border: 1px solid black;
-			padding: 7px;
-			position: absolute;
-			height: 78%;
-			width: 37%;
-			font-size:12;
-		}
-    </style>
-
-	<textarea id="code">
-	</textarea>
-
-	<button id="run_button" style="position:absolute; top:83%; left:1%; width:10%" onclick="turtle_site.clear ();">
-		Clear program
-	</button>
-	
-	<label for='select_example' style="position:absolute; top:83%; left:13%; width:11%">Select demo:</label>
-	
-	<select id='select_example' style="position:absolute; top:83%; left:24%; width:13%" onchange="turtle_site.selectExample ();" onfocus="this.selectedIndex = -1">
-		<option value="mondrian">Mondrian</option>
-		<option value="star">Star</option>
-		<option value="mandala">Mandala</option>
-		<option value="snowflake">Snowflake</option>
-	</select>
-
-	<button id="run_button" style="position:absolute; top:87%; left:1%; width:10%" onclick="turtle_site.run ();">
-		Compile and run
-	</button>
-
-	<button id="mail_button" style="position:absolute; top:87%; left:13%; width:11%" onclick="turtle_site.mail ();">
-		Mail source to:
-	</button>
-
-	<input id="mail_address" type="text" style="position:absolute; top:87%; left:24%; width:13%"/>
-
-	<div style="position:absolute; top:91%; height:9%; width:37%">
-		<b>Try to change the demo a bit, or make your own program!</b><br>
-		To keep you work safe, regularly mail a copy to yourself while programming,<br>
-		because refreshing the page, selecting an example, or just bad luck will erase it...<br>
-	</div>
-	
-	<div id="__turtlegraph__" style="position:absolute; left:40%; height:80%; width:59%">
-	</div>
-
-    <div id="banner" style="position:absolute; left:45%; top:1%; height:10%; font-size:12;">Powered by the <a href="http://www.transcrypt.org"><b><i>Transcrypt</i></b></a> Python to Javascript compiler: <b><i>lean, fast, open!</i></b>
-    </div>
+        <div id="button_area" class="block" style="top:78%; height:22%;">
+            <button id="clear_button" class="block" style="top:10%; height:25px; width:33%" onclick="turtle_site.clear ();">
+                Clear program
+            </button>
+            
+            <label id="for_select_example" class="block" for="select_example" style="top:10%; height:25px; left:33%; width:33%">Select demo:</label>
+            
+            <select id="select_example" class="block" style="top:10%; height:25px; left:66%; width:33%" onchange="turtle_site.selectExample ();" onfocus="this.selectedIndex = -1">
+                <option value="mondrian">Mondrian</option>
+                <option value="star">Star</option>
+                <option value="mandala">Mandala</option>
+                <option value="snowflake">Snowflake</option>
+            </select>
+        
+            <button id="run_button" class="block" style="top:30%; height:25px; left:0%; width:33%" onclick="turtle_site.run ();">
+                Compile and run
+            </button>
+        
+            <button id="mail_button" class="block "style="top:30%; height:25px; left:33%; width:33%" onclick="turtle_site.mail ();">
+                Mail source to:
+            </button>
+        
+            <input id="mail_address" class="block" type="text" style="top:30%; height:25px; left:66%; width:33%"/>
     
-    <iframe id="output" style="position:absolute; top:5%; left:45%; height:95%; width:49%">`
-    </iframe>
+            <div id="hint_area" class="block" style="top:50%; height:40%; text-align:center;">
+                <b>Try to change the demo a bit, or make your own program!</b><br>
+                To keep you work safe, regularly mail a copy to yourself while programming,<br>
+                because refreshing the page, selecting an example, or just bad luck will erase it...<br>
+            </div>
+        </div>
+    </div>
 
+    <div id="right_pane" class="block" style="left:37%; width:63%;">
+        <div id="banner" class="block" style="top:1%; height:3%; text-align:center; font-size:12;">Powered by the <a href="http://www.transcrypt.org"><b><i>Transcrypt</i></b></a> Python to Javascript compiler: <b><i>lean, fast, open!</i></b>
+        </div>
+        
+        <iframe id="output" class="block" style="top:5%; left:3%;">
+        </iframe>
+    </div>
+	
 	<script id="source_code">
 		var editor = CodeMirror.fromTextArea (document.getElementById ("code"), {
 			mode: {
