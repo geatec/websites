@@ -9,15 +9,36 @@ def clear ():
     
 def run ():
     def success (result):
-        print (result)
-        pass
-        # global random
-    
-        # turtle.reset ()
-        # rnd = random    # Save reference to random module from being overwritten
-        # eval (result)
-        # # __pragma__ ('js', '{}', "let module = await js_import ('../../demos/turtle_demos/__target__/mondrian.js');")
-        # random = rnd    # Restore reference to random module
+        style = '''
+            <style>
+                #__terminal__ {
+                    background-color: darkblue;
+                    color: white;
+                    font-family: arial;
+                    font-size: 14px;
+                }
+            </style>
+        '''
+
+        outputHtml = f'''
+            <html>
+                <head>
+                    <script type="module" src="http://www.transcrypt.org/live/user/{result}">
+                    </script>
+                    {style}
+                </head>
+                <body>      
+                    <div id="__turtlegraph__" style="position:absolute; height:80%; width:98%;">
+                    </div>
+                    <div id="__terminal__" style="position:absolute; top:80%; height:19%; width:98%;">
+                    </div>
+                </body>
+            </html>
+        '''
+
+        __pragma__ ('js', '{}', "var outputBlob = new Blob ([outputHtml], {type: 'text/html'})")
+        outputUrl = URL.createObjectURL (outputBlob)
+        document.getElementById ('output') .src = outputUrl
     
     def fail (a, b, c):
         print ('Run error:', a, b, c)
